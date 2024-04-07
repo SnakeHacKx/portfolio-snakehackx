@@ -1,0 +1,9 @@
+<button
+  class="btn"
+  [ngClass]="{
+    'btn--primary': buttonType === 'primary',
+    'btn--secondary': buttonType === 'secondary'
+  }"
+>
+  {{ textContent }}
+</button>

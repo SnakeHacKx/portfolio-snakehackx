@@ -1,0 +1,104 @@
+.section-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  height: 95vh;
+  // transform: translateY(-100px);
+
+  // z-index: -1;
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#4a06f6, 0.5),
+      rgba(#1e0069, 0.7)
+    ),
+    url("../../../assets/images/bg-hero-02.jpg");
+
+  &__box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+  }
+
+  &__buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  h3 {
+    margin-top: 5rem;
+  }
+}
+
+.section-about {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  &__text {
+    width: 50%;
+
+    p {
+      width: 75%;
+    }
+  }
+
+  &__image {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__social {
+    display: flex;
+    gap: 4rem;
+  }
+}
+
+.icon-box {
+  align-self: stretch;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.5rem;
+
+  & > * {
+    cursor: pointer;
+    // padding: 0 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    fill: var(--color-white);
+    height: 6rem;
+    width: 6rem;
+
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
+
+  span {
+    color: var(--color-white);
+    font-size: 1.3rem;
+  }
+}

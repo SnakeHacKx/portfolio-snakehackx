@@ -1,0 +1,15 @@
+.info-heading {
+  display: flex;
+  width: 15rem;
+  height: 4rem;
+  padding: 1rem 2.8rem;
+  justify-content: center;
+  font-size: var(--default-font-size);
+  align-items: center;
+  text-transform: uppercase;
+  gap: 1rem;
+  border-radius: 2rem;
+  border: 0.1rem solid #5a2bdc;
+  background: #100a30;
+  margin-bottom: 1rem;
+}
