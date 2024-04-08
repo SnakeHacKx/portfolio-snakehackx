@@ -2,5 +2,5 @@
   <svg class="icon-box__icon">
     <use [attr.xlink:href]="fullPath" />
   </svg>
-  <span>{{ text }}</span>
+  <span *ngIf="text !== ''">{{ text }}</span>
 </div>

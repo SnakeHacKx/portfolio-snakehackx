@@ -22,31 +22,152 @@
   </section>
 
   <section class="section-about">
-    <!-- <div class="section-about__box"> -->
-    <img
-      src="../../../assets/images/developer.jpg"
-      alt=""
-      class="section-about__image"
-    />
-    <div class="section-about__text">
-      <shared-section-heading textContent="sobre mi"></shared-section-heading>
-      <p class="paragraph">
-        Lorem ipsum dolor sit amet consectetur. Egestas libero rhoncus commodo
-        ac. Condimentum habitant lacus id condimentum duis nulla et neque
-        consectetur. Arcu massa enim lacus vitae fringilla purus ut viverra. Nec
-        in vel senectus pulvinar quisque. Auctor vitae amet magna adipiscing
-        nisl. Purus proin pharetra viverra ut magna sagittis vitae fermentum.
-        Vel amet pulvinar dignissim amet nisi. Vestibulum ut ultrices
-        scelerisque pulvinar imperdiet. Est in neque aliquam lectus. Amet morbi
-        et vel amet pulvinar elementum semper pellentesque et.
-      </p>
-      <!-- TODO: redes sociales -->
-      <div class="section-about__social">
-        <shared-logo-icon text="GitHub" iconName="icon-github" />
-        <shared-logo-icon text="LinkedIn" iconName="icon-in" />
-        <shared-logo-icon text="Instagram" iconName="icon-ig" />
+    <div class="section-about__image-text-container">
+      <img
+        src="../../../assets/images/developer.jpg"
+        alt=""
+        class="section-about__image"
+      />
+      <div class="section-about__text">
+        <shared-section-heading textContent="sobre mi"></shared-section-heading>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet consectetur. Egestas libero rhoncus commodo
+          ac. Condimentum habitant lacus id condimentum duis nulla et neque
+          consectetur. Arcu massa enim lacus vitae fringilla purus ut viverra.
+          Nec in vel senectus pulvinar quisque. Auctor vitae amet magna
+          adipiscing nisl. Purus proin pharetra viverra ut magna sagittis vitae
+          fermentum. Vel amet pulvinar dignissim amet nisi. Vestibulum ut
+          ultrices scelerisque pulvinar imperdiet. Est in neque aliquam lectus.
+          Amet morbi et vel amet pulvinar elementum semper pellentesque et.
+        </p>
+        <div class="section-about__social">
+          <shared-logo-icon text="GitHub" iconName="icon-github" />
+          <shared-logo-icon text="LinkedIn" iconName="icon-in" />
+          <shared-logo-icon text="Instagram" iconName="icon-ig" />
+        </div>
       </div>
     </div>
-    <!-- </div> -->
+    <div class="align-grid-to-center">
+      <div class="section-about__info-container">
+        <div class="section-about__info__education">
+          <h2>Educación</h2>
+          <div class="info-item">
+            <strong>Ingeniería en Sistemas y Computación</strong>
+            <p>Universidad Tecnológica de Panamá / Azuero / 2018 - presente</p>
+          </div>
+
+          <div class="info-item">
+            <strong>ELS Language Centers</strong>
+            <p>After School Program / ACP Las Tablas / 2017</p>
+          </div>
+
+          <div class="info-item">
+            <strong>Educación Secundaria - Bachillerato Científico</strong>
+            <p>Colegio Manuel María Tejada Roca / Las Tablas / 2012 - 2017</p>
+          </div>
+
+          <div class="info-item">
+            <strong>Educación Primaria</strong>
+            <p>Escuela Presidente Porras / Las Tablas / 2012 - 2017</p>
+          </div>
+        </div>
+
+        <div class="section-about__info__achievements">
+          <h2>Logros</h2>
+          <div class="info-item">
+            <strong>Olimpiadas de Física a nivel regional</strong>
+            <p>2017 / Pasé de ronda</p>
+          </div>
+
+          <div class="info-item">
+            <strong>Olimpiadas de Física a nivel nacional</strong>
+            <p>2017</p>
+          </div>
+
+          <div class="info-item">
+            <strong>Cybertech Latin America - TechPrendedores</strong>
+            <p>Proyecto <a href="#">FindAPro</a> / Segundo Lugar / 2023</p>
+          </div>
+        </div>
+
+        <div class="section-about__info__hobbies">
+          <h2>Aficiones</h2>
+          <div class="section-about__info__hobby-grid">
+            <shared-logo-icon text="Programación" iconName="icon-programming" />
+            <shared-logo-icon
+              text="Diseño Gráfico"
+              iconName="icon-graphic-design"
+            />
+            <shared-logo-icon
+              text="Aprendizaje de Idiomas"
+              iconName="icon-language-learning"
+            />
+            <shared-logo-icon text="Videojuegos" iconName="icon-videogames" />
+            <shared-logo-icon text="Fútbol" iconName="icon-football" />
+            <shared-logo-icon text="Música" iconName="icon-music" />
+            <shared-logo-icon text="Cocina" iconName="icon-cooking" />
+          </div>
+        </div>
+
+        <div class="section-about__info__lang">
+          <h2>Idiomas</h2>
+          <div class="language-item">
+            <div class="language-item__flag">
+              <shared-logo-icon iconName="icon-flag-pan" />
+            </div>
+            <div class="language-item__text">
+              <strong>Español</strong>
+              <p>Nativo</p>
+            </div>
+          </div>
+
+          <div class="language-item">
+            <div class="language-item__flag">
+              <shared-logo-icon iconName="icon-flag-usa" />
+            </div>
+            <div class="language-item__text">
+              <strong>Inglés</strong>
+              <p>Intermedio</p>
+            </div>
+          </div>
+
+          <div class="language-item">
+            <div class="language-item__flag">
+              <shared-logo-icon iconName="icon-flag-jp" />
+            </div>
+            <div class="language-item__text">
+              <strong>Japonés</strong>
+              <p>Básico</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-skills">
+    <shared-section-heading textContent="habilidades"></shared-section-heading>
+    <div class="skills-buttons">
+      <shared-button
+        textContent="Frondend"
+        buttonType="secondary"
+      ></shared-button>
+      <shared-button
+        textContent="Backend"
+        buttonType="secondary"
+      ></shared-button>
+      <shared-button
+        textContent="Programación"
+        buttonType="secondary"
+      ></shared-button>
+      <shared-button
+        textContent="Herrramientas"
+        buttonType="secondary"
+      ></shared-button>
+      <shared-button
+        textContent="Otras"
+        buttonType="secondary"
+      ></shared-button>
+    </div>
   </section>
 </main>

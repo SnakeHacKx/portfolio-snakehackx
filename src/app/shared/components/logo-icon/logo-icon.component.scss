@@ -1,0 +1,29 @@
+.icon-box {
+  align-self: stretch;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.5rem;
+
+  & > * {
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    fill: var(--color-white);
+    height: 6rem;
+    width: 6rem;
+  }
+
+  span {
+    color: var(--color-white);
+    font-size: 1.3rem;
+  }
+}
