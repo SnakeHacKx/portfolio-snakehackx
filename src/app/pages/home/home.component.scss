@@ -113,6 +113,7 @@
 
   strong {
     color: white;
+    font-size: var(--default-font-size);
   }
 }
 
@@ -122,9 +123,92 @@
   gap: 1rem;
 
   __flag {
-
   }
 
   __text {
   }
+}
+
+.section-skills {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 2rem;
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__grid-container {
+  }
+}
+
+.skills-grid {
+  grid-column: cennbhgter-start / center-end;
+
+  display: grid;
+  // grid-template-rows: auto auto;
+  grid-gap: 2rem;
+  margin-bottom: 5rem;
+  // background-color: #4a06f6;
+  column-gap: 5rem;
+
+  // align-items: center;
+  // justify-content: center;
+  // align-self: center;
+}
+
+.skills-frontend {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.skills-backend {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.skills-programming {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.skills-tools {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.skills-design {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.skills-games {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skills-other {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.section-projects {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 2rem;
+}
+
+.footer {
+  display: flex;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  margin-top: 5rem;
+  background-color: #1e0069;
+
+  justify-content: center;
+  align-items: center;
 }
