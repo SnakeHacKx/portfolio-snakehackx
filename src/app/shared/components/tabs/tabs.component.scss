@@ -1,0 +1,20 @@
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &__opt {
+    font-size: var(--default-font-size);
+    font-family: inherit;
+    text-decoration: none;
+    padding: 1.2rem 2rem;
+    border-radius: 10rem;
+    background-color: transparent;
+    color: white;
+
+    &.active {
+      background-color: antiquewhite;
+      color: black;
+    }
+  }
+}

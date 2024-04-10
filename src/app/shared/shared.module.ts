@@ -7,6 +7,7 @@ import { LogoComponent } from './components/logo/logo.component';
 import { SectionHeadingComponent } from './components/section-heading/section-heading.component';
 import { LogoIconComponent } from './components/logo-icon/logo-icon.component';
 import { ProjectSliderComponent } from './components/project-slider/project-slider.component';
+import { TabsComponent } from './components/tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ProjectSliderComponent } from './components/project-slider/project-slid
     SectionHeadingComponent,
     LogoIconComponent,
     ProjectSliderComponent,
+    TabsComponent,
   ],
   imports: [CommonModule],
   exports: [
@@ -27,6 +29,7 @@ import { ProjectSliderComponent } from './components/project-slider/project-slid
     SectionHeadingComponent,
     LogoIconComponent,
     ProjectSliderComponent,
+    TabsComponent,
   ],
 })
 export class SharedModule {}

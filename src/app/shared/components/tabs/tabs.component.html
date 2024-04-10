@@ -1,0 +1,11 @@
+<ul class="nav nav-tabs">
+  <div
+    class="nav__item"
+    *ngFor="let tab of tabs; let i = index"
+    (click)="setTab(i)"
+  >
+    <button class="nav__opt" [ngClass]="activatedTab == i ? 'active' : ''">
+      {{ tab }}
+    </button>
+  </div>
+</ul>

@@ -5,8 +5,8 @@
         Transformando Ideas en Experiencias Digitales Únicas
       </h1>
       <h3>
-        Ingeniero en Sistemas y Computación, Desarrollador Full Stack &
-        Diseñador UI/UX
+        Practicante de Ingeniero en Sistemas y Computación, Desarrollador Full
+        Stack & Diseñador UI/UX
       </h3>
       <div class="section-hero__buttons">
         <shared-button
@@ -31,14 +31,16 @@
       <div class="section-about__text">
         <shared-section-heading textContent="sobre mi"></shared-section-heading>
         <p class="paragraph">
-          Lorem ipsum dolor sit amet consectetur. Egestas libero rhoncus commodo
-          ac. Condimentum habitant lacus id condimentum duis nulla et neque
-          consectetur. Arcu massa enim lacus vitae fringilla purus ut viverra.
-          Nec in vel senectus pulvinar quisque. Auctor vitae amet magna
-          adipiscing nisl. Purus proin pharetra viverra ut magna sagittis vitae
-          fermentum. Vel amet pulvinar dignissim amet nisi. Vestibulum ut
-          ultrices scelerisque pulvinar imperdiet. Est in neque aliquam lectus.
-          Amet morbi et vel amet pulvinar elementum semper pellentesque et.
+          ¡Hola! mi nombre es Omar Medina, actualmente estoy en mi fase de
+          practicante de Lic. en Ingeniería en Sistemas y Computación en la
+          Universidad Tecnológica de Panamá y tengo 24 años. Me gusta aprender
+          cosas nuevas y enseñar lo que sé, cuando sea oportuno. He hecho
+          proyectos universitarios como aplicaciones móviles y de escritorio,
+          páginas webs, bases de datos, sistemas de recomendación, robots, etc.
+          También he realizado proyectos personales como videojuegos en Unity y
+          backends en NodeJS con el framework NestJS. Tengo especial interés en
+          el diseño UI/UX, el desarrollo de aplicaciones web/móviles/escritorio,
+          el diseño, además del desarrollo de videojuegos y entornos 3D.
         </p>
         <div class="section-about__social">
           <shared-logo-icon text="GitHub" iconName="icon-github" />
@@ -85,7 +87,7 @@
           </div>
 
           <div class="info-item">
-            <strong>Cybertech Latin America - TechPrendedores</strong>
+            <strong>Concurso Cybertech Latin America - TechPrendedores</strong>
             <p>Proyecto <a href="#">FindAPro</a> / Segundo Lugar / 2023</p>
           </div>
         </div>
@@ -147,36 +149,14 @@
 
   <section class="section-skills">
     <shared-section-heading textContent="habilidades"></shared-section-heading>
-    <div class="section-skills__buttons">
-      <shared-button
-        textContent="Frondend"
-        buttonType="secondary"
-      ></shared-button>
 
-      <shared-button
-        textContent="Backend"
-        buttonType="secondary"
-      ></shared-button>
+    <shared-tabs
+      [tabs]="skillsTabs"
+      (onTabChanged)="tabChanged($event)"
+    ></shared-tabs>
 
-      <shared-button
-        textContent="Programación"
-        buttonType="secondary"
-      ></shared-button>
-
-      <shared-button
-        textContent="Herrramientas"
-        buttonType="secondary"
-      ></shared-button>
-
-      <shared-button
-        textContent="Videojuegos"
-        buttonType="secondary"
-      ></shared-button>
-
-      <shared-button textContent="Otras" buttonType="secondary"></shared-button>
-    </div>
     <div class="section-skills__grid-container">
-      <div class="skills-grid skills-frontend">
+      <div class="skills-grid skills-frontend" *ngIf="activatedTabIndex == 0">
         <shared-logo-icon text="HTML" iconName="icon-html" />
         <shared-logo-icon text="CSS" iconName="icon-css" />
         <shared-logo-icon text="SASS" iconName="icon-sass" />
@@ -184,7 +164,7 @@
         <shared-logo-icon text="Flutter" iconName="icon-flutter" />
       </div>
 
-      <div class="skills-grid skills-backend">
+      <div class="skills-grid skills-backend" *ngIf="activatedTabIndex == 1">
         <shared-logo-icon text="NodeJS" iconName="icon-node" />
         <shared-logo-icon text="NestJS" iconName="icon-nest" />
         <shared-logo-icon text="GraphQL" iconName="icon-graphql" />
@@ -193,7 +173,10 @@
         <shared-logo-icon text="SQL Server" iconName="icon-sql-server" />
       </div>
 
-      <div class="skills-grid skills-programming">
+      <div
+        class="skills-grid skills-programming"
+        *ngIf="activatedTabIndex == 2"
+      >
         <shared-logo-icon text="C#" iconName="icon-csharp" />
         <shared-logo-icon text="C++" iconName="icon-c++" />
         <shared-logo-icon text="Dart" iconName="icon-dart" />
@@ -203,7 +186,14 @@
         <shared-logo-icon text="Arduino" iconName="icon-arduino" />
       </div>
 
-      <div class="skills-grid skills-tools">
+      <div class="skills-grid skills-design" *ngIf="activatedTabIndex == 3">
+        <shared-logo-icon text="Adobe XD" iconName="icon-adobexd" />
+        <shared-logo-icon text="Blender" iconName="icon-blender" />
+        <shared-logo-icon text="Figma" iconName="icon-figma" />
+        <shared-logo-icon text="Photoshop" iconName="icon-ps" />
+      </div>
+
+      <div class="skills-grid skills-tools" *ngIf="activatedTabIndex == 4">
         <shared-logo-icon text="Docker" iconName="icon-docker" />
         <shared-logo-icon text="Git" iconName="icon-git" />
         <shared-logo-icon text="VS Code" iconName="icon-vscode" />
@@ -212,14 +202,7 @@
         <shared-logo-icon text="Power BI" iconName="icon-powerbi" />
       </div>
 
-      <div class="skills-grid skills-design">
-        <shared-logo-icon text="Adobe XD" iconName="icon-adobexd" />
-        <shared-logo-icon text="Blender" iconName="icon-blender" />
-        <shared-logo-icon text="Figma" iconName="icon-figma" />
-        <shared-logo-icon text="Photoshop" iconName="icon-ps" />
-      </div>
-
-      <div class="skills-grid skills-games">
+      <div class="skills-grid skills-games" *ngIf="activatedTabIndex == 5">
         <shared-logo-icon text="Unity" iconName="icon-unity" />
         <shared-logo-icon text="Game Design Document" iconName="icon-gdd" />
         <shared-logo-icon
@@ -228,7 +211,7 @@
         />
       </div>
 
-      <div class="skills-grid skills-other">
+      <div class="skills-grid skills-other" *ngIf="activatedTabIndex == 6">
         <shared-logo-icon text="Comprometido" iconName="icon-commited" />
         <shared-logo-icon text="Liderar Proyectos" iconName="icon-leader" />
         <shared-logo-icon text="Aprender" iconName="icon-learn" />
@@ -241,36 +224,13 @@
 
   <section class="section-projects">
     <shared-section-heading textContent="proyectos"></shared-section-heading>
-    <div class="section-projects__buttons">
-      <shared-button
-        textContent="Páginas Web"
-        buttonType="secondary"
-      ></shared-button>
 
-      <shared-button
-        textContent="Apps Móviles"
-        buttonType="secondary"
-      ></shared-button>
+    <shared-tabs
+      [tabs]="projectTabs"
+      (onTabChanged)="tabChanged($event)"
+    ></shared-tabs>
 
-      <shared-button
-        textContent="Diseños"
-        buttonType="secondary"
-      ></shared-button>
-
-      <shared-button
-        textContent="Videojuegos"
-        buttonType="secondary"
-      ></shared-button>
-
-      <shared-button
-        textContent="Ingeniería"
-        buttonType="secondary"
-      ></shared-button>
-
-      <shared-button textContent="Otros" buttonType="secondary"></shared-button>
-    </div>
-
-    <shared-project-slider></shared-project-slider>
+    <shared-project-slider [projects]="projects"> </shared-project-slider>
   </section>
 
   <footer class="footer">FOOTER</footer>

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Project } from './interfaces/project.interface';
 
 @Component({
   selector: 'shared-project-slider',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './project-slider.component.scss',
 })
 export class ProjectSliderComponent {
+
+  @Input() projects: Project[] = [];
+
   next = document.querySelector('.next');
   prev = document.querySelector('.prev');
 

@@ -1,3 +1,8 @@
+.separator {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .section-hero {
   display: flex;
   align-items: center;
@@ -155,8 +160,9 @@
   display: grid;
   // grid-template-rows: auto auto;
   grid-gap: 2rem;
-  margin-bottom: 5rem;
-  background-color: #4a06f6;
+  margin-top: 2rem;
+  // margin-bottom: 5rem;
+  // background-color: #4a06f6;
   column-gap: 5rem;
 }
 
