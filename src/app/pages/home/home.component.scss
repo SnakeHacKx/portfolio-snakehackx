@@ -156,15 +156,12 @@
   // grid-template-rows: auto auto;
   grid-gap: 2rem;
   margin-bottom: 5rem;
-  // background-color: #4a06f6;
+  background-color: #4a06f6;
   column-gap: 5rem;
-
-  // align-items: center;
-  // justify-content: center;
-  // align-self: center;
 }
 
 .skills-frontend {
+  //   max-width: max-content;
   grid-template-columns: repeat(5, 1fr);
 }
 
@@ -173,7 +170,7 @@
 }
 
 .skills-programming {
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
 }
 
 .skills-tools {
@@ -200,6 +197,12 @@
   justify-content: center;
 
   gap: 2rem;
+
+  &__buttons {
+    display: flex;
+    gap: 2rem;
+    // background-color: #4a06f6;
+  }
 }
 
 .footer {
