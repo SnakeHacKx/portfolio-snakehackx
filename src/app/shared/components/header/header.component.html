@@ -1,7 +1,12 @@
 <header class="header">
-  <shared-nav></shared-nav>
+  <div class="logo-nav">
+    <div class="logo_snakehackx"></div>
+    <shared-nav></shared-nav>
+  </div>
 
-  <shared-logo></shared-logo>
-
-  <shared-button textContent="Contáctame" buttonType="secondary"></shared-button>
+  <shared-button
+    (buttonClick)="goToSection('contact')"
+    textContent="Contáctame"
+    buttonType="secondary"
+  ></shared-button>
 </header>

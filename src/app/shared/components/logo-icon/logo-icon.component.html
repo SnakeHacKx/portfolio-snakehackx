@@ -1,6 +1,28 @@
-<div class="icon-box">
-  <svg class="icon-box__icon">
-    <use [attr.xlink:href]="fullPath" />
-  </svg>
-  <span *ngIf="text !== ''">{{ text }}</span>
-</div>
+<!-- <a [href]="url" target="_blank">
+  <div class="icon-box">
+    <svg class="icon-box__icon" [ngClass]="customClass">
+      <use [attr.xlink:href]="fullPath" />
+    </svg>
+    <span *ngIf="text !== ''">{{ text }}</span>
+  </div>
+</a> -->
+
+<ng-container *ngIf="url; else nonClickableContent">
+  <a [href]="url" target="_blank">
+    <div class="icon-box">
+      <svg class="icon-box__icon" [ngClass]="customClass">
+        <use [attr.xlink:href]="fullPath"></use>
+      </svg>
+      <span *ngIf="text !== ''">{{ text }}</span>
+    </div>
+  </a>
+</ng-container>
+
+<ng-template #nonClickableContent>
+  <div class="icon-box">
+    <svg class="icon-box__icon" [ngClass]="customClass">
+      <use [attr.xlink:href]="fullPath"></use>
+    </svg>
+    <span *ngIf="text !== ''">{{ text }}</span>
+  </div>
+</ng-template>

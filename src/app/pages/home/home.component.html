@@ -1,19 +1,21 @@
 <main>
-  <section class="section-hero">
+  <section id="hero" class="section-hero">
     <div class="section-hero__box">
       <h1 class="section-hero__heading">
         Transformando Ideas en Experiencias Digitales Únicas
       </h1>
       <h3>
         Practicante de Ingeniero en Sistemas y Computación, Desarrollador Full
-        Stack & Diseñador UI/UX
+        Stack Junior & Diseñador UI/UX
       </h3>
       <div class="section-hero__buttons">
         <shared-button
+          (buttonClick)="goToSection('projects')"
           textContent="Mis Proyectos"
           buttonType="primary"
         ></shared-button>
         <shared-button
+          (buttonClick)="goToSection('about')"
           textContent="Conóceme"
           buttonType="secondary"
         ></shared-button>
@@ -21,10 +23,10 @@
     </div>
   </section>
 
-  <section class="section-about">
+  <section id="about" class="section-about">
     <div class="section-about__image-text-container">
       <img
-        src="../../../assets/images/developer.jpg"
+        src="../../../assets/images/sk-photo.png"
         alt=""
         class="section-about__image"
       />
@@ -43,9 +45,21 @@
           el diseño, además del desarrollo de videojuegos y entornos 3D.
         </p>
         <div class="section-about__social">
-          <shared-logo-icon text="GitHub" iconName="icon-github" />
-          <shared-logo-icon text="LinkedIn" iconName="icon-in" />
-          <shared-logo-icon text="Instagram" iconName="icon-ig" />
+          <shared-logo-icon
+            url="https://github.com/SnakeHacKx"
+            text="GitHub"
+            iconName="icon-github"
+          />
+          <shared-logo-icon
+            url="https://www.linkedin.com/in/omar-medina-ing/"
+            text="LinkedIn"
+            iconName="icon-in"
+          />
+          <shared-logo-icon
+            url="https://www.instagram.com/snakehackx/"
+            text="Instagram"
+            iconName="icon-ig"
+          />
         </div>
       </div>
     </div>
@@ -147,91 +161,274 @@
     </div>
   </section>
 
-  <section class="section-skills">
+  <section id="skills" class="section-skills">
     <shared-section-heading textContent="habilidades"></shared-section-heading>
 
     <shared-tabs
       [tabs]="skillsTabs"
-      (onTabChanged)="tabChanged($event)"
+      (onTabChanged)="skillTabChanged($event)"
     ></shared-tabs>
 
     <div class="section-skills__grid-container">
-      <div class="skills-grid skills-frontend" *ngIf="activatedTabIndex == 0">
-        <shared-logo-icon text="HTML" iconName="icon-html" />
-        <shared-logo-icon text="CSS" iconName="icon-css" />
-        <shared-logo-icon text="SASS" iconName="icon-sass" />
-        <shared-logo-icon text="Angular" iconName="icon-angular" />
-        <shared-logo-icon text="Flutter" iconName="icon-flutter" />
-      </div>
-
-      <div class="skills-grid skills-backend" *ngIf="activatedTabIndex == 1">
-        <shared-logo-icon text="NodeJS" iconName="icon-node" />
-        <shared-logo-icon text="NestJS" iconName="icon-nest" />
-        <shared-logo-icon text="GraphQL" iconName="icon-graphql" />
-        <shared-logo-icon text="MongoDB" iconName="icon-mongo" />
-        <shared-logo-icon text="PostgreSQL" iconName="icon-postgres" />
-        <shared-logo-icon text="SQL Server" iconName="icon-sql-server" />
-      </div>
-
-      <div
-        class="skills-grid skills-programming"
-        *ngIf="activatedTabIndex == 2"
-      >
-        <shared-logo-icon text="C#" iconName="icon-csharp" />
-        <shared-logo-icon text="C++" iconName="icon-c++" />
-        <shared-logo-icon text="Dart" iconName="icon-dart" />
-        <shared-logo-icon text="Python" iconName="icon-python" />
-        <shared-logo-icon text="TypeScript" iconName="icon-ts" />
-        <shared-logo-icon text="Visual Basic .NET" iconName="icon-vb" />
-        <shared-logo-icon text="Arduino" iconName="icon-arduino" />
-      </div>
-
-      <div class="skills-grid skills-design" *ngIf="activatedTabIndex == 3">
-        <shared-logo-icon text="Adobe XD" iconName="icon-adobexd" />
-        <shared-logo-icon text="Blender" iconName="icon-blender" />
-        <shared-logo-icon text="Figma" iconName="icon-figma" />
-        <shared-logo-icon text="Photoshop" iconName="icon-ps" />
-      </div>
-
-      <div class="skills-grid skills-tools" *ngIf="activatedTabIndex == 4">
-        <shared-logo-icon text="Docker" iconName="icon-docker" />
-        <shared-logo-icon text="Git" iconName="icon-git" />
-        <shared-logo-icon text="VS Code" iconName="icon-vscode" />
-        <shared-logo-icon text="Visual Studio" iconName="icon-vs" />
-        <shared-logo-icon text="Postman" iconName="icon-postman" />
-        <shared-logo-icon text="Power BI" iconName="icon-powerbi" />
-      </div>
-
-      <div class="skills-grid skills-games" *ngIf="activatedTabIndex == 5">
-        <shared-logo-icon text="Unity" iconName="icon-unity" />
-        <shared-logo-icon text="Game Design Document" iconName="icon-gdd" />
+      <div class="skills-grid skills-frontend" *ngIf="skillTabIndex == 0">
         <shared-logo-icon
+          customClass="icon-skill"
+          text="HTML"
+          iconName="icon-html"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          text="CSS"
+          iconName="icon-css"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://sass-lang.com/"
+          text="SASS"
+          iconName="icon-sass"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://angular.dev/"
+          text="Angular"
+          iconName="icon-angular"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://flutter.dev/"
+          text="Flutter"
+          iconName="icon-flutter"
+        />
+      </div>
+
+      <div class="skills-grid skills-backend" *ngIf="skillTabIndex == 1">
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://nodejs.org/en"
+          text="NodeJS"
+          iconName="icon-node"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://nestjs.com/"
+          text="NestJS"
+          iconName="icon-nest"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://graphql.org/"
+          text="GraphQL"
+          iconName="icon-graphql"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://www.mongodb.com/"
+          text="MongoDB"
+          iconName="icon-mongo"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://www.postgresql.org/"
+          text="PostgreSQL"
+          iconName="icon-postgres"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://www.microsoft.com/en-us/sql-server/sql-server-downloads"
+          text="SQL Server"
+          iconName="icon-sql-server"
+        />
+      </div>
+
+      <div class="skills-grid skills-programming" *ngIf="skillTabIndex == 2">
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://dotnet.microsoft.com/en-us/languages/csharp"
+          text="C#"
+          iconName="icon-csharp"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          text="C++"
+          iconName="icon-c++"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://dart.dev/"
+          text="Dart"
+          iconName="icon-dart"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://www.python.org/"
+          text="Python"
+          iconName="icon-python"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://www.typescriptlang.org/"
+          text="TypeScript"
+          iconName="icon-ts"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://www.javascript.com/"
+          text="JavaScript"
+          iconName="icon-js"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          text="Visual Basic .NET"
+          iconName="icon-vb"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://www.arduino.cc/"
+          text="Arduino"
+          iconName="icon-arduino"
+        />
+      </div>
+
+      <div class="skills-grid skills-design" *ngIf="skillTabIndex == 3">
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://helpx.adobe.com/support/xd.html?mv=other&promoid=YP7XGDMW"
+          text="Adobe XD"
+          iconName="icon-adobexd"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://www.blender.org/"
+          text="Blender"
+          iconName="icon-blender"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://www.figma.com/"
+          text="Figma"
+          iconName="icon-figma"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://www.adobe.com/products/photoshop.html"
+          text="Photoshop"
+          iconName="icon-ps"
+        />
+      </div>
+
+      <div class="skills-grid skills-tools" *ngIf="skillTabIndex == 4">
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://www.docker.com/"
+          text="Docker"
+          iconName="icon-docker"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://git-scm.com/"
+          text="Git"
+          iconName="icon-git"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://code.visualstudio.com/"
+          text="VS Code"
+          iconName="icon-vscode"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://visualstudio.microsoft.com/"
+          text="Visual Studio"
+          iconName="icon-vs"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://www.postman.com/"
+          text="Postman"
+          iconName="icon-postman"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://www.microsoft.com/en-us/power-platform/products/power-bi"
+          text="Power BI"
+          iconName="icon-powerbi"
+        />
+      </div>
+
+      <div class="skills-grid skills-games" *ngIf="skillTabIndex == 5">
+        <shared-logo-icon
+          customClass="icon-skill"
+          url="https://unity.com/"
+          text="Unity"
+          iconName="icon-unity"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          text="Game Design Document"
+          iconName="icon-gdd"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
           text="Diseño de Videojuegos"
           iconName="icon-game-design"
         />
       </div>
 
-      <div class="skills-grid skills-other" *ngIf="activatedTabIndex == 6">
-        <shared-logo-icon text="Comprometido" iconName="icon-commited" />
-        <shared-logo-icon text="Liderar Proyectos" iconName="icon-leader" />
-        <shared-logo-icon text="Aprender" iconName="icon-learn" />
-        <shared-logo-icon text="Enseñar" iconName="icon-teach" />
-        <shared-logo-icon text="Organizado" iconName="icon-organized" />
-        <shared-logo-icon text="Trabajo en Equipo" iconName="icon-teamwork" />
+      <div class="skills-grid skills-other" *ngIf="skillTabIndex == 6">
+        <shared-logo-icon
+          customClass="icon-skill"
+          text="Comprometido"
+          iconName="icon-commited"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          text="Liderar Proyectos"
+          iconName="icon-leader"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          text="Aprender"
+          iconName="icon-learn"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          text="Enseñar"
+          iconName="icon-teach"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          text="Organizado"
+          iconName="icon-organized"
+        />
+        <shared-logo-icon
+          customClass="icon-skill"
+          text="Trabajo en Equipo"
+          iconName="icon-teamwork"
+        />
       </div>
     </div>
   </section>
 
-  <section class="section-projects">
+  <section id="projects" class="section-projects">
     <shared-section-heading textContent="proyectos"></shared-section-heading>
 
     <shared-tabs
       [tabs]="projectTabs"
-      (onTabChanged)="tabChanged($event)"
+      (onTabChanged)="projectTabChanged($event)"
     ></shared-tabs>
 
-    <shared-project-slider [projects]="projects"> </shared-project-slider>
+    <shared-project-slider [projects]="webPagesProjects" />
+
+    <shared-project-slider [projects]="mobileAppsProjects" />
+
+    <shared-project-slider [projects]="backendProjects" />
+
+    <shared-project-slider [projects]="designProjects" />
+
+    <shared-project-slider [projects]="machineLearningProjects" />
   </section>
+
+  <section id="contact" class="section-contact">Contacto</section>
 
   <footer class="footer">FOOTER</footer>
 </main>

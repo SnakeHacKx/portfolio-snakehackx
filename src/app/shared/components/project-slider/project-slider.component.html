@@ -1,3 +1,33 @@
+<!-- <div class="container">
+  <div class="slide">
+    <div
+      class="slide__item"
+      *ngFor="let project of projects; let i = index"
+      [ngStyle]="{ 'background-image': 'url(' + project.imagePath + ')' }"
+      [class.active]="isActive(i)"
+    >
+      <div *ngIf="isActive(i)" class="content">
+        <h1 class="project-title">{{ project.heading }}</h1>
+        <div class="project-description">
+          {{ project.description }}
+        </div>
+        <shared-button
+          textContent="Ver Más"
+          buttonType="primary"
+        ></shared-button>
+      </div>
+    </div>
+    <div class="button">
+      <button class="prev" (click)="onPrev()">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+      <button class="next" (click)="onNext()">
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+</div> -->
+
 <div class="container">
   <div class="slide">
     <div

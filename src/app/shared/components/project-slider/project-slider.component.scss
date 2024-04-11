@@ -43,14 +43,37 @@ $box-shadow: 0 10px 20px #111111;
         }
       }
 
+      // &.next {
+      //   display: block;
+      //   opacity: 1;
+      //   transform: translateX(100%); // Posicionado a la derecha del activo
+      //   box-shadow: $box-shadow;
+      // }
+
+      // &.next2 {
+      //   display: block;
+      //   opacity: 1;
+      //   transform: translateX(200%); // Más a la derecha
+      //   box-shadow: $box-shadow;
+      // }
+
+      // &.next3 {
+      //   display: block;
+      //   opacity: 1;
+      //   transform: translateX(300%); // Aún más a la derecha
+      //   box-shadow: $box-shadow;
+      // }
+
       &:nth-child(3) {
         left: 50%;
         box-shadow: $box-shadow;
       }
+
       &:nth-child(4) {
         left: calc(50% + 220px);
         box-shadow: $box-shadow;
       }
+
       &:nth-child(5) {
         left: calc(50% + 440px);
         box-shadow: $box-shadow;

@@ -10,4 +10,24 @@
   height: 0;
   position: absolute;
   width: 100%;
+
+}
+
+.logo_snakehackx {
+  cursor: pointer;
+  background-image: url("../../../../assets/icons/social/logo_skahehackx.svg");
+  width: 5rem;
+  height: 5rem;
+  border-radius: 20rem;
+  transition: all 0.4s;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+.logo-nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }

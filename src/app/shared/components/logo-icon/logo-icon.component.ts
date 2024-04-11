@@ -8,6 +8,8 @@ import { Component, Input } from '@angular/core';
 export class LogoIconComponent {
   @Input() text: string = '';
   @Input() iconName: string = '';
+  @Input() customClass: string = '';
+  @Input() url: string = '';
 
   private baseSvgPath: string = '../../../assets/icons/sprite.svg#';
 
