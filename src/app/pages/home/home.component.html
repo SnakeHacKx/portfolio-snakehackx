@@ -33,16 +33,14 @@
       <div class="section-about__text">
         <shared-section-heading textContent="sobre mi"></shared-section-heading>
         <p class="paragraph">
-          ¡Hola! mi nombre es Omar Medina, actualmente estoy en mi fase de
-          practicante de Lic. en Ingeniería en Sistemas y Computación en la
-          Universidad Tecnológica de Panamá y tengo 24 años. Me gusta aprender
-          cosas nuevas y enseñar lo que sé, cuando sea oportuno. He hecho
-          proyectos universitarios como aplicaciones móviles y de escritorio,
-          páginas webs, bases de datos, sistemas de recomendación, robots, etc.
-          También he realizado proyectos personales como videojuegos en Unity y
-          backends en NodeJS con el framework NestJS. Tengo especial interés en
-          el diseño UI/UX, el desarrollo de aplicaciones web/móviles/escritorio,
-          el diseño, además del desarrollo de videojuegos y entornos 3D.
+          ¡Hola! Soy Omar Medina, estudiante de Ingeniería en Sistemas y
+          Computación en la Universidad Tecnológica de Panamá, con 24 años de
+          edad. Apasionado por la tecnología, tengo experiencia en el desarrollo
+          de aplicaciones móviles, de escritorio, y webs, además de trabajar con
+          bases de datos y sistemas de recomendación. He creado videojuegos en
+          Unity y desarrollado backends en NodeJS usando NestJS. Estoy
+          especialmente interesado en UI/UX, desarrollo de videojuegos y
+          aplicaciones móviles.
         </p>
         <div class="section-about__social">
           <shared-logo-icon
@@ -153,7 +151,7 @@
             </div>
             <div class="language-item__text">
               <strong>Japonés</strong>
-              <p>Básico</p>
+              <p>Básico (iniciando estudio)</p>
             </div>
           </div>
         </div>
@@ -417,15 +415,45 @@
       (onTabChanged)="projectTabChanged($event)"
     ></shared-tabs>
 
-    <shared-project-slider [projects]="webPagesProjects" />
+    <shared-project-slider
+      [projects]="mobileAppsProjects"
+      *ngIf="projectTabIndex == 0"
+    />
 
-    <shared-project-slider [projects]="mobileAppsProjects" />
+    <shared-project-slider
+      [projects]="backendProjects"
+      *ngIf="projectTabIndex == 1"
+    />
 
-    <shared-project-slider [projects]="backendProjects" />
+    <shared-project-slider
+      [projects]="webPagesProjects"
+      *ngIf="projectTabIndex == 2"
+    />
 
-    <shared-project-slider [projects]="designProjects" />
+    <shared-project-slider
+      [projects]="designProjects"
+      *ngIf="projectTabIndex == 3"
+    />
 
-    <shared-project-slider [projects]="machineLearningProjects" />
+    <shared-project-slider
+      [projects]="gamesProjects"
+      *ngIf="projectTabIndex == 4"
+    />
+
+    <shared-project-slider
+      [projects]="engineeringProjects"
+      *ngIf="projectTabIndex == 5"
+    />
+
+    <shared-project-slider
+      [projects]="machineLearningProjects"
+      *ngIf="projectTabIndex == 6"
+    />
+
+    <shared-project-slider
+      [projects]="otherProjects"
+      *ngIf="projectTabIndex == 7"
+    />
   </section>
 
   <section id="contact" class="section-contact">Contacto</section>

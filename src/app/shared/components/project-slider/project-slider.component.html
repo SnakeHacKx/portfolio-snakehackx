@@ -1,42 +1,17 @@
-<!-- <div class="container">
-  <div class="slide">
-    <div
-      class="slide__item"
-      *ngFor="let project of projects; let i = index"
-      [ngStyle]="{ 'background-image': 'url(' + project.imagePath + ')' }"
-      [class.active]="isActive(i)"
-    >
-      <div *ngIf="isActive(i)" class="content">
-        <h1 class="project-title">{{ project.heading }}</h1>
-        <div class="project-description">
-          {{ project.description }}
-        </div>
-        <shared-button
-          textContent="Ver Más"
-          buttonType="primary"
-        ></shared-button>
-      </div>
-    </div>
-    <div class="button">
-      <button class="prev" (click)="onPrev()">
-        <i class="fa-solid fa-arrow-left"></i>
-      </button>
-      <button class="next" (click)="onNext()">
-        <i class="fa-solid fa-arrow-right"></i>
-      </button>
-    </div>
-  </div>
-</div> -->
-
 <div class="container">
   <div class="slide">
     <div
       class="slide__item"
-      *ngFor="let project of projects"
-      [ngStyle]="{ 'background-image': 'url(' + project.imagePath + ')' }"
+      *ngFor="let project of projects; let i = index"
+      [ngStyle]="{ 'background-image': 'url(' + project.poster + ')' }"
+      [class.active]="isActive(i)"
+      [class.next]="isNext(i, 1)"
+      [class.next2]="isNext(i, 2)"
+      [class.next3]="isNext(i, 3)"
     >
-      <div class="content">
+      <div *ngIf="isActive(i)" class="content">
         <h1 class="project-title">{{ project.heading }}</h1>
+        <h3 class="developing" *ngIf="project.develping">En desarrollo</h3>
         <div class="project-description">
           {{ project.description }}
         </div>
@@ -46,110 +21,13 @@
         ></shared-button>
       </div>
     </div>
-    <div class="button">
-      <button class="prev" (click)="onPrev()">
+    <div class="slider-buttons">
+      <button class="prev slider-buttons__btn" (click)="onPrev()">
         <i class="fa-solid fa-arrow-left"></i>
       </button>
-      <button class="next" (click)="onNext()">
+      <button class="next slider-buttons__btn" (click)="onNext()">
         <i class="fa-solid fa-arrow-right"></i>
       </button>
     </div>
   </div>
 </div>
-
-<!-- * -----------------------  -->
-
-<!-- <div class="container">
-  <div class="slide">
-    <div
-      class="slide__item"
-      style="
-        background-image: url(../../../assets/images/projects/mobile-app.jpg);
-      "
-    >
-      <div class="content">
-        <h1 class="project-title">FindAPro</h1>
-        <div class="project-description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!
-        </div>
-        <shared-button
-          textContent="Ver Más"
-          buttonType="primary"
-        ></shared-button>
-      </div>
-    </div>
-    <div
-      class="slide__item"
-      style="background-image: url(../../../assets/images/projects/game.jpg)"
-    >
-      <div class="content">
-        <h1 class="project-title">Videojuego 2D</h1>
-        <div class="project-description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!
-        </div>
-        <shared-button
-          textContent="Ver Más"
-          buttonType="primary"
-        ></shared-button>
-      </div>
-    </div>
-    <div
-      class="slide__item"
-      style="
-        background-image: url(../../../assets/images/projects/ui-design.jpg);
-      "
-    >
-      <div class="content">
-        <h1 class="project-title">Portafolio Personal</h1>
-        <div class="project-description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!
-        </div>
-        <shared-button
-          textContent="Ver Más"
-          buttonType="primary"
-        ></shared-button>
-      </div>
-    </div>
-    <div
-      class="slide__item"
-      style="background-image: url(../../../assets/images/projects/webpage.jpg)"
-    >
-      <div class="content">
-        <h1 class="project-title">Natours</h1>
-        <div class="project-description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!
-        </div>
-        <shared-button
-          textContent="Ver Más"
-          buttonType="primary"
-        ></shared-button>
-      </div>
-    </div>
-    <div
-      class="slide__item"
-      style="
-        background-image: url(../../../assets/images/projects/console-app.jpg);
-      "
-    >
-      <div class="content">
-        <h1 class="project-title">Métodos Numéricos</h1>
-        <div class="project-description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!
-        </div>
-        <shared-button
-          textContent="Ver Más"
-          buttonType="primary"
-        ></shared-button>
-      </div>
-    </div>
-  </div>
-
-  <div class="button">
-    <button class="prev" (click)="onPrev()">
-      <i class="fa-solid fa-arrow-left"></i>
-    </button>
-    <button class="next" (click)="onNext()">
-      <i class="fa-solid fa-arrow-right"></i>
-    </button>
-  </div>
-</div> -->

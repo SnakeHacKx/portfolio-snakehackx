@@ -1,5 +1,9 @@
 export interface Project {
+  id: string;
   heading: string;
   description: string;
-  imagePath: string;
+  poster: string;
+  develping?: boolean;
+  images: string[];
+  skillsAndTools: string[];
 }
