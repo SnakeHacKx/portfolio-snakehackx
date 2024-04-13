@@ -454,9 +454,26 @@
       [projects]="otherProjects"
       *ngIf="projectTabIndex == 7"
     />
+
+    <!-- <router-outlet></router-outlet> -->
   </section>
 
-  <section id="contact" class="section-contact">Contacto</section>
+  <section id="contact" class="section-contact">
+    <shared-section-heading class="contact-heading" textContent="contacto"></shared-section-heading>
+    <div class="section-contact__container">
+      <div class="section-contact__heading">
+        <div class="content">
+          <h2>Hablemos de nuestro próximo proyecto</h2>
+          <shared-button
+            iconName="icon-whatsapp"
+            textContent="Chatéame"
+            buttonType="primary"
+          ></shared-button>
+        </div>
+      </div>
+      <!-- <div class="section-contact__form">Form</div> -->
+    </div>
+  </section>
 
-  <footer class="footer">FOOTER</footer>
+  <shared-footer></shared-footer>
 </main>

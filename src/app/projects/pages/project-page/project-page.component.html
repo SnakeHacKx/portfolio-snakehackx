@@ -1,0 +1,61 @@
+<main>
+  <section class="section-project-hero">
+    <shared-button
+      class="btn-back"
+      iconName="icon-back"
+      textContent="Volver"
+      buttonType="tertiary"
+    ></shared-button>
+    <div class="section-project-hero__box">
+      <h2 class="section-project-hero__subheading">{{ project?.year }}</h2>
+      <h1 class="section-project-hero__heading">
+        {{ project?.heading }}
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        architecto id sapiente atque facilis. Ducimus soluta dolor repellendus
+        cum! Consectetur distinctio modi omnis ad doloremque, placeat
+        repudiandae officiis quisquam atque.
+      </p>
+      <div class="section-project-hero__buttons">
+        <shared-button
+          iconName="icon-view"
+          textContent="Demo"
+          buttonType="primary"
+        ></shared-button>
+        <shared-button
+          iconName="icon-code"
+          textContent="Código fuente"
+          buttonType="primary"
+        ></shared-button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-required-skills">
+    <shared-section-heading
+      textContent="habilidades y herramientas usadas"
+    ></shared-section-heading>
+
+    <div
+      class="required-skills"
+      [ngStyle]="{
+        'grid-template-columns':
+          'repeat(' +
+          (project?.skillsAndTools?.length! > 5
+            ? 5
+            : project?.skillsAndTools?.length) +
+          ', 1fr)'
+      }"
+    >
+      <shared-logo-icon
+        *ngFor="let skill of project?.skillsAndTools"
+        customClass="icon-skill"
+        url="https://dotnet.microsoft.com/en-us/languages/csharp"
+        text="C#"
+        iconName="icon-csharp"
+        />
+        <!-- text="{{ project?.skillsAndTools?.name! }}" -->
+    </div>
+  </section>
+</main>

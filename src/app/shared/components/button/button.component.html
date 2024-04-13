@@ -3,8 +3,14 @@
   (click)="onClick()"
   [ngClass]="{
     'btn--primary': buttonType === 'primary',
-    'btn--secondary': buttonType === 'secondary'
+    'btn--secondary': buttonType === 'secondary',
+    'btn--tertiary': buttonType === 'tertiary',
   }"
 >
+  <ng-container *ngIf="iconName">
+    <svg class="icon-box__icon" [ngClass]="iconCustomClass">
+      <use [attr.xlink:href]="fullPath"></use>
+    </svg>
+  </ng-container>
   {{ textContent }}
 </button>

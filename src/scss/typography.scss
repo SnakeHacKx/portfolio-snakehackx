@@ -12,6 +12,7 @@ h1 {
   backface-visibility: hidden; /* Para que no se mueva raro cuando termina la animacion */
   font-family: "Inter", sans-serif;
   font-size: 6.4rem;
+  line-height: 8rem;
 
   animation: moveInRight 1s ease-out;
 }

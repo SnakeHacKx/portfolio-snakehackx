@@ -8,6 +8,8 @@ import { SectionHeadingComponent } from './components/section-heading/section-he
 import { LogoIconComponent } from './components/logo-icon/logo-icon.component';
 import { ProjectSliderComponent } from './components/project-slider/project-slider.component';
 import { TabsComponent } from './components/tabs/tabs.component';
+import { ProjectRoutingModule } from '../projects/projects-routing.module';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +21,9 @@ import { TabsComponent } from './components/tabs/tabs.component';
     LogoIconComponent,
     ProjectSliderComponent,
     TabsComponent,
+    FooterComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, ProjectRoutingModule],
   exports: [
     ButtonComponent,
     HeaderComponent,
@@ -30,6 +33,7 @@ import { TabsComponent } from './components/tabs/tabs.component';
     LogoIconComponent,
     ProjectSliderComponent,
     TabsComponent,
+    FooterComponent
   ],
 })
 export class SharedModule {}
