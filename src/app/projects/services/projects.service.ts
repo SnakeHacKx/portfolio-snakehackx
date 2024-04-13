@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { catchError, Observable, of, throwError } from 'rxjs';
 import { map, mergeMap } from 'rxjs/operators';
 
-import { Project } from '../../shared/components/project-slider/interfaces/project.interface';
+import { Project } from '../interfaces/project.interface';
 
 @Injectable({
   providedIn: 'root',

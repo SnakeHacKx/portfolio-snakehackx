@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Project } from '../../shared/components/project-slider/interfaces/project.interface';
+import { Project } from '../../projects/interfaces/project.interface';
 import { SharedService } from '../../shared/services/shared.service';
 import { ProjectsService } from '../../projects/services/projects.service';
 

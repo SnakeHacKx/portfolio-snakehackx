@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Project } from './interfaces/project.interface';
+import { Project } from '../../../projects/interfaces/project.interface';
 
 @Component({
   selector: 'shared-project-slider',
