@@ -36,26 +36,20 @@
     <shared-section-heading
       textContent="habilidades y herramientas usadas"
     ></shared-section-heading>
-
     <div
       class="required-skills"
       [ngStyle]="{
-        'grid-template-columns':
-          'repeat(' +
-          (project?.skillsAndTools?.length! > 5
-            ? 5
-            : project?.skillsAndTools?.length) +
-          ', 1fr)'
+        'grid-template-columns': getGridTemplateColumns(projectSkills)
       }"
     >
       <shared-logo-icon
-        *ngFor="let skill of project?.skillsAndTools"
+        *ngFor="let skill of projectSkills"
         customClass="icon-skill"
-        url="https://dotnet.microsoft.com/en-us/languages/csharp"
-        text="C#"
-        iconName="icon-csharp"
-        />
-        <!-- text="{{ project?.skillsAndTools?.name! }}" -->
+        [url]="skill.url"
+        [text]="skill.name"
+        [iconName]="skill.iconName"
+      >
+      </shared-logo-icon>
     </div>
   </section>
 </main>

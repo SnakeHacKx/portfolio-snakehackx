@@ -148,17 +148,11 @@
 
   gap: 2rem;
 
-  // transition: all 0.4s;
-
   &__buttons {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-  }
-
-  &__grid-container {
-    // animation: moveInRight 1s ease-out;
   }
 }
 
@@ -166,42 +160,40 @@
   grid-column: center-start / center-end;
 
   display: grid;
-  // grid-template-rows: auto auto;
   grid-gap: 2rem;
   margin-top: 2rem;
-  // margin-bottom: 5rem;
-  // background-color: #4a06f6;
   column-gap: 5rem;
+  // grid-template-columns: repeat(5, 1fr);
 }
 
-.skills-frontend {
-  //   max-width: max-content;
-  grid-template-columns: repeat(5, 1fr);
-}
+// .skills-frontend {
+//   //   max-width: max-content;
+//   grid-template-columns: repeat(5, 1fr);
+// }
 
-.skills-backend {
-  grid-template-columns: repeat(6, 1fr);
-}
+// .skills-backend {
+//   grid-template-columns: repeat(6, 1fr);
+// }
 
-.skills-programming {
-  grid-template-columns: repeat(7, 1fr);
-}
+// .skills-programming {
+//   grid-template-columns: repeat(7, 1fr);
+// }
 
-.skills-tools {
-  grid-template-columns: repeat(6, 1fr);
-}
+// .skills-tools {
+//   grid-template-columns: repeat(6, 1fr);
+// }
 
-.skills-design {
-  grid-template-columns: repeat(4, 1fr);
-}
+// .skills-design {
+//   grid-template-columns: repeat(4, 1fr);
+// }
 
-.skills-games {
-  grid-template-columns: repeat(3, 1fr);
-}
+// .skills-games {
+//   grid-template-columns: repeat(3, 1fr);
+// }
 
-.skills-other {
-  grid-template-columns: repeat(6, 1fr);
-}
+// .skills-other {
+//   grid-template-columns: repeat(6, 1fr);
+// }
 
 .section-projects {
   margin-top: 5rem;

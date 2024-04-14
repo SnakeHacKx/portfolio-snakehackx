@@ -1,59 +1,219 @@
 {
   "skills-frontend": [
-    { "id": "html", "name": "HTML", "iconName": "icon-html" },
-    { "id": "sass", "name": "SASS", "iconName": "icon-sass" },
-    { "id": "flutter", "name": "Flutter", "iconName": "icon-flutter" }
+    { "id": "html", "name": "HTML", "iconName": "icon-html", "url": "" },
+    { "id": "css", "name": "CSS", "iconName": "icon-css", "url": "" },
+    {
+      "id": "sass",
+      "name": "SASS",
+      "iconName": "icon-sass",
+      "url": "https://sass-lang.com/"
+    },
+    {
+      "id": "angular",
+      "name": "Angular",
+      "iconName": "icon-angular",
+      "url": "https://angular.dev/"
+    },
+    {
+      "id": "flutter",
+      "name": "Flutter",
+      "iconName": "icon-flutter",
+      "url": "https://flutter.dev/"
+    }
   ],
   "skills-backend": [
-    { "id": "node", "name": "NodeJS", "iconName": "icon-node" },
-    { "id": "nest", "name": "NestJS", "iconName": "icon-nest" },
-    { "id": "graphql", "name": "GraphQL", "iconName": "icon-graphql" },
-    { "id": "mongo", "name": "MongoDB", "iconName": "icon-mongo" },
-    { "id": "postgres", "name": "PostgreSQL", "iconName": "icon-postgres" },
-    { "id": "sql-server", "name": "SQL Server", "iconName": "icon-sql-server" },
-    { "id": "postgres", "name": "PostgreSQL", "iconName": "icon-postgres" }
+    {
+      "id": "node",
+      "name": "NodeJS",
+      "iconName": "icon-node",
+      "url": "https://nodejs.org/en"
+    },
+    {
+      "id": "nest",
+      "name": "NestJS",
+      "iconName": "icon-nest",
+      "url": "https://nestjs.com/"
+    },
+    {
+      "id": "graphql",
+      "name": "GraphQL",
+      "iconName": "icon-graphql",
+      "url": "https://graphql.org/"
+    },
+    {
+      "id": "mongo",
+      "name": "MongoDB",
+      "iconName": "icon-mongo",
+      "url": "https://www.mongodb.com/"
+    },
+    {
+      "id": "postgres",
+      "name": "PostgreSQL",
+      "iconName": "icon-postgres",
+      "url": "https://www.postgresql.org/"
+    },
+    {
+      "id": "sql-server",
+      "name": "SQL Server",
+      "iconName": "icon-sql-server",
+      "url": "https://www.microsoft.com/en-us/sql-server/sql-server-downloads"
+    }
   ],
   "skills-programming": [
-    { "id": "csharp", "name": "C#", "iconName": "icon-csharp" },
-    { "id": "c++", "name": "C++", "iconName": "icon-c++" },
-    { "id": "dart", "name": "Dart", "iconName": "icon-dart" },
-    { "id": "python", "name": "Python", "iconName": "icon-python" },
-    { "id": "js", "name": "JavaScript", "iconName": "icon-js" },
-    { "id": "vb", "name": "Visual Basic .NET", "iconName": "icon-vb" },
-    { "id": "arduino", "name": "Arduino", "iconName": "icon-arduino" }
+    {
+      "id": "csharp",
+      "name": "C#",
+      "iconName": "icon-csharp",
+      "url": "https://dotnet.microsoft.com/en-us/languages/csharp"
+    },
+    { "id": "c++", "name": "C++", "iconName": "icon-c++", "url": "" },
+    {
+      "id": "dart",
+      "name": "Dart",
+      "iconName": "icon-dart",
+      "url": "https://dart.dev/"
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "iconName": "icon-python",
+      "url": "https://www.python.org/"
+    },
+    {
+      "id": "js",
+      "name": "JavaScript",
+      "iconName": "icon-js",
+      "url": "https://www.javascript.com/"
+    },
+    {
+      "id": "ts",
+      "name": "TypeScript",
+      "iconName": "icon-ts",
+      "url": "https://www.typescriptlang.org/"
+    },
+    {
+      "id": "vb",
+      "name": "Visual Basic .NET",
+      "iconName": "icon-vb",
+      "url": ""
+    },
+    {
+      "id": "arduino",
+      "name": "Arduino",
+      "iconName": "icon-arduino",
+      "url": "https://www.arduino.cc/"
+    }
   ],
   "skills-design": [
-    { "id": "adobexd", "name": "Adobe XD", "iconName": "icon-adobexd" },
-    { "id": "blender", "name": "Blender", "iconName": "icon-blender" },
-    { "id": "figma", "name": "Figma", "iconName": "icon-figma" },
-    { "id": "ps", "name": "Photoshop", "iconName": "icon-ps" }
+    {
+      "id": "adobexd",
+      "name": "Adobe XD",
+      "iconName": "icon-adobexd",
+      "url": "https://helpx.adobe.com/support/xd.html?mv=other&promoid=YP7XGDMW"
+    },
+    {
+      "id": "blender",
+      "name": "Blender",
+      "iconName": "icon-blender",
+      "url": "https://www.blender.org/"
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "iconName": "icon-figma",
+      "url": "https://www.figma.com/"
+    },
+    {
+      "id": "ps",
+      "name": "Photoshop",
+      "iconName": "icon-ps",
+      "url": "https://www.adobe.com/products/photoshop.html"
+    }
   ],
   "skills-tools": [
-    { "id": "docker", "name": "Docker", "iconName": "icon-docker" },
-    { "id": "git", "name": "Git", "iconName": "icon-git" },
-    { "id": "vscode", "name": "VS Code", "iconName": "icon-vscode" },
-    { "id": "vs", "name": "Visual Studio", "iconName": "icon-vs" },
-    { "id": "postman", "name": "Postman", "iconName": "icon-postman" },
-    { "id": "powerbi", "name": "Power BI", "iconName": "icon-powerbi" }
+    {
+      "id": "docker",
+      "name": "Docker",
+      "iconName": "icon-docker",
+      "url": "https://www.docker.com/"
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "iconName": "icon-git",
+      "url": "https://git-scm.com/"
+    },
+    {
+      "id": "vscode",
+      "name": "VS Code",
+      "iconName": "icon-vscode",
+      "url": "https://code.visualstudio.com/"
+    },
+    {
+      "id": "vs",
+      "name": "Visual Studio",
+      "iconName": "icon-vs",
+      "url": "https://visualstudio.microsoft.com/"
+    },
+    {
+      "id": "postman",
+      "name": "Postman",
+      "iconName": "icon-postman",
+      "url": "https://www.postman.com/"
+    },
+    {
+      "id": "powerbi",
+      "name": "Power BI",
+      "iconName": "icon-powerbi",
+      "url": "https://www.microsoft.com/en-us/power-platform/products/power-bi"
+    }
   ],
   "skills-games": [
-    { "id": "unity", "name": "Unity", "iconName": "icon-unity" },
+    {
+      "id": "unity",
+      "name": "Unity",
+      "iconName": "icon-unity",
+      "url": "https://unity.com/"
+    },
     {
       "id": "game-design",
       "name": "Diseño de Videojuegos",
-      "iconName": "icon-game-design"
+      "iconName": "icon-game-design",
+      "url": ""
+    },
+    {
+      "id": "gdd",
+      "name": "Game Design Document",
+      "iconName": "icon-gdd",
+      "url": ""
     }
   ],
   "skills-other": [
-    { "id": "commited", "name": "Comprometido", "iconName": "icon-commited" },
-    { "id": "leader", "name": "Liderar Proyectos", "iconName": "icon-leader" },
-    { "id": "learn", "name": "Aprender", "iconName": "icon-learn" },
-    { "id": "teach", "name": "Enseñar", "iconName": "icon-teach" },
-    { "id": "organized", "name": "Organizado", "iconName": "icon-organized" },
+    {
+      "id": "commited",
+      "name": "Comprometido",
+      "iconName": "icon-commited",
+      "url": ""
+    },
+    {
+      "id": "leader",
+      "name": "Liderar Proyectos",
+      "iconName": "icon-leader",
+      "url": ""
+    },
+    { "id": "learn", "name": "Aprender", "iconName": "icon-learn", "url": "" },
+    { "id": "teach", "name": "Enseñar", "iconName": "icon-teach", "url": "" },
+    {
+      "id": "organized",
+      "name": "Organizado",
+      "iconName": "icon-organized",
+      "url": ""
+    },
     {
       "id": "teamwork",
       "name": "Trabajo en Equipo",
-      "iconName": "icon-teamwork"
+      "iconName": "icon-teamwork",
+      "url": ""
     }
   ]
 }

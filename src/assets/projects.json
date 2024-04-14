@@ -15,24 +15,13 @@
       ],
       "skillsAndTools": [
         {
-          "name": "Flutter",
-          "iconName": "icon-flutter"
+          "id": "flutter"
         },
         {
-          "name": "Docker",
-          "iconName": "icon-docker"
+          "id": "dart"
         },
         {
-          "name": "NestJS",
-          "iconName": "icon-nest"
-        },
-        {
-          "name": "Dart",
-          "iconName": "icon-dart"
-        },
-        {
-          "name": "GraphQL",
-          "iconName": "icon-graphql"
+          "id": "nest"
         }
       ]
     },

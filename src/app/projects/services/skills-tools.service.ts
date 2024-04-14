@@ -1,4 +1,3 @@
-// src/app/services/project.service.ts
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { catchError, Observable, of, throwError } from 'rxjs';
@@ -9,14 +8,12 @@ import { SkillInterface } from '../interfaces/skills-tools.interface';
   providedIn: 'root',
 })
 export class SkillsService {
-  private dataUrl = 'assets/skill-tools.json'; // Asegúrate de que esta es la ruta correcta a tus datos
+  private dataUrl = 'assets/skills-tools.json'; // Asegúrate de que esta es la ruta correcta a tus datos
 
   constructor(private http: HttpClient) {}
 
   getSkillsAndTools(): Observable<{ [key: string]: SkillInterface[] }> {
-    return this.http.get<{ [key: string]: SkillInterface[] }>(
-      this.dataUrl
-    );
+    return this.http.get<{ [key: string]: SkillInterface[] }>(this.dataUrl);
   }
 
   getProjectById(id: string): Observable<SkillInterface> {

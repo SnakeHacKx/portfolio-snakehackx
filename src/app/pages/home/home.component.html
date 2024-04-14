@@ -161,249 +161,30 @@
 
   <section id="skills" class="section-skills">
     <shared-section-heading textContent="habilidades"></shared-section-heading>
-
     <shared-tabs
       [tabs]="skillsTabs"
       (onTabChanged)="skillTabChanged($event)"
     ></shared-tabs>
 
     <div class="section-skills__grid-container">
-      <div class="skills-grid skills-frontend" *ngIf="skillTabIndex == 0">
-        <shared-logo-icon
-          customClass="icon-skill"
-          text="HTML"
-          iconName="icon-html"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          text="CSS"
-          iconName="icon-css"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://sass-lang.com/"
-          text="SASS"
-          iconName="icon-sass"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://angular.dev/"
-          text="Angular"
-          iconName="icon-angular"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://flutter.dev/"
-          text="Flutter"
-          iconName="icon-flutter"
-        />
-      </div>
-
-      <div class="skills-grid skills-backend" *ngIf="skillTabIndex == 1">
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://nodejs.org/en"
-          text="NodeJS"
-          iconName="icon-node"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://nestjs.com/"
-          text="NestJS"
-          iconName="icon-nest"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://graphql.org/"
-          text="GraphQL"
-          iconName="icon-graphql"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://www.mongodb.com/"
-          text="MongoDB"
-          iconName="icon-mongo"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://www.postgresql.org/"
-          text="PostgreSQL"
-          iconName="icon-postgres"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://www.microsoft.com/en-us/sql-server/sql-server-downloads"
-          text="SQL Server"
-          iconName="icon-sql-server"
-        />
-      </div>
-
-      <div class="skills-grid skills-programming" *ngIf="skillTabIndex == 2">
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://dotnet.microsoft.com/en-us/languages/csharp"
-          text="C#"
-          iconName="icon-csharp"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          text="C++"
-          iconName="icon-c++"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://dart.dev/"
-          text="Dart"
-          iconName="icon-dart"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://www.python.org/"
-          text="Python"
-          iconName="icon-python"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://www.typescriptlang.org/"
-          text="TypeScript"
-          iconName="icon-ts"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://www.javascript.com/"
-          text="JavaScript"
-          iconName="icon-js"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          text="Visual Basic .NET"
-          iconName="icon-vb"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://www.arduino.cc/"
-          text="Arduino"
-          iconName="icon-arduino"
-        />
-      </div>
-
-      <div class="skills-grid skills-design" *ngIf="skillTabIndex == 3">
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://helpx.adobe.com/support/xd.html?mv=other&promoid=YP7XGDMW"
-          text="Adobe XD"
-          iconName="icon-adobexd"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://www.blender.org/"
-          text="Blender"
-          iconName="icon-blender"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://www.figma.com/"
-          text="Figma"
-          iconName="icon-figma"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://www.adobe.com/products/photoshop.html"
-          text="Photoshop"
-          iconName="icon-ps"
-        />
-      </div>
-
-      <div class="skills-grid skills-tools" *ngIf="skillTabIndex == 4">
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://www.docker.com/"
-          text="Docker"
-          iconName="icon-docker"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://git-scm.com/"
-          text="Git"
-          iconName="icon-git"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://code.visualstudio.com/"
-          text="VS Code"
-          iconName="icon-vscode"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://visualstudio.microsoft.com/"
-          text="Visual Studio"
-          iconName="icon-vs"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://www.postman.com/"
-          text="Postman"
-          iconName="icon-postman"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://www.microsoft.com/en-us/power-platform/products/power-bi"
-          text="Power BI"
-          iconName="icon-powerbi"
-        />
-      </div>
-
-      <div class="skills-grid skills-games" *ngIf="skillTabIndex == 5">
-        <shared-logo-icon
-          customClass="icon-skill"
-          url="https://unity.com/"
-          text="Unity"
-          iconName="icon-unity"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          text="Game Design Document"
-          iconName="icon-gdd"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          text="Diseño de Videojuegos"
-          iconName="icon-game-design"
-        />
-      </div>
-
-      <div class="skills-grid skills-other" *ngIf="skillTabIndex == 6">
-        <shared-logo-icon
-          customClass="icon-skill"
-          text="Comprometido"
-          iconName="icon-commited"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          text="Liderar Proyectos"
-          iconName="icon-leader"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          text="Aprender"
-          iconName="icon-learn"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          text="Enseñar"
-          iconName="icon-teach"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          text="Organizado"
-          iconName="icon-organized"
-        />
-        <shared-logo-icon
-          customClass="icon-skill"
-          text="Trabajo en Equipo"
-          iconName="icon-teamwork"
-        />
-      </div>
+      <ng-container *ngFor="let tab of skillsTabs; let i = index">
+        <div
+          *ngIf="skillTabIndex === i"
+          [class]="['skills-grid', tab.toLowerCase().replace(' ', '-')]"
+          [ngStyle]="{
+            'grid-template-columns': getGridTemplateColumns(getSkillsByTab(i))
+          }"
+        >
+          <shared-logo-icon
+            *ngFor="let skill of getSkillsByTab(i)"
+            customClass="icon-skill"
+            [url]="skill.url"
+            [text]="skill.name"
+            [iconName]="skill.iconName"
+          >
+          </shared-logo-icon>
+        </div>
+      </ng-container>
     </div>
   </section>
 
@@ -459,7 +240,10 @@
   </section>
 
   <section id="contact" class="section-contact">
-    <shared-section-heading class="contact-heading" textContent="contacto"></shared-section-heading>
+    <shared-section-heading
+      class="contact-heading"
+      textContent="contacto"
+    ></shared-section-heading>
     <div class="section-contact__container">
       <div class="section-contact__heading">
         <div class="content">
