@@ -20,6 +20,11 @@
     fill: var(--color-white);
     height: 6rem;
     width: 6rem;
+    transition: all 300ms;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   span {

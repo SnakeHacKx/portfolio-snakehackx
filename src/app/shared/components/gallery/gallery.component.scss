@@ -26,10 +26,10 @@
       margin-bottom: 3rem;
       box-shadow: 0 1px 5px 0 rgba(#000, 0.21);
       background-size: cover;
-      transition: all 1.1s;
+      transition: all 300ms;
 
       &:hover {
-        transform: scale(1.2);
+        transform: scale(1.05);
       }
     }
   }
@@ -120,12 +120,15 @@
     }
 
     .lightbox-img {
+      // background-color: aqua;
       width: 80%;
+      height: 90%;
       border-radius: 0.35rem;
 
       img {
-        min-width: 50%;
-        max-width: 80%;
+        width: 100%;
+        height: 100%;
+        object-fit: scale-down;
       }
     }
   }

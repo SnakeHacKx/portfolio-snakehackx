@@ -54,7 +54,8 @@
     <shared-section-heading textContent="galería"></shared-section-heading>
 
     <div class="section-gallery__gallery">
-      <shared-gallery [galleryData]="data" [showCount]="true"> </shared-gallery>
+      <shared-gallery [galleryData]="project?.images ?? []" [showCount]="true">
+      </shared-gallery>
     </div>
   </section>
 </main>

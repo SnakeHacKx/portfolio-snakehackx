@@ -1,3 +1,4 @@
+import { Item } from '../../shared/components/gallery/interfaces/item.interface';
 import { SkillInterface } from './skills-tools.interface';
 
 export interface Project {
@@ -7,6 +8,6 @@ export interface Project {
   description: string;
   poster: string;
   develping?: boolean;
-  images: string[];
+  images: Item[];
   skillsAndTools: SkillInterface[];
 }
