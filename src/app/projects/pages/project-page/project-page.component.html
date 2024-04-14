@@ -12,10 +12,7 @@
         {{ project?.heading }}
       </h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
-        architecto id sapiente atque facilis. Ducimus soluta dolor repellendus
-        cum! Consectetur distinctio modi omnis ad doloremque, placeat
-        repudiandae officiis quisquam atque.
+        {{ project?.description }}
       </p>
       <div class="section-project-hero__buttons">
         <shared-button
@@ -50,6 +47,14 @@
         [iconName]="skill.iconName"
       >
       </shared-logo-icon>
+    </div>
+  </section>
+
+  <section class="section-gallery">
+    <shared-section-heading textContent="galería"></shared-section-heading>
+
+    <div class="section-gallery__gallery">
+      <shared-gallery [galleryData]="data" [showCount]="true"> </shared-gallery>
     </div>
   </section>
 </main>

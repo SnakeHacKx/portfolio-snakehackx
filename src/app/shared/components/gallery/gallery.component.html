@@ -1,0 +1,44 @@
+<div class="gallery-lightbox-container">
+  <div class="gallery">
+    <div *ngFor="let data of galleryData; let i = index" class="gallery-img">
+      <img
+        (click)="onPreviewImage(i)"
+        [src]="data.imageSrc"
+        [alt]="data.imageAlt"
+      />
+    </div>
+
+    <div *ngIf="showMask" class="lightbox">
+      <span *ngIf="showCount" class="count">
+        {{ currentGalleryIndex + 1 }}/{{ totalImageCount }}
+      </span>
+      <button *ngIf="previewImage" class="close-btn" (click)="onClosePreview()">
+        <i class="fa-solid fa-xmark-large fa-times"></i>
+      </button>
+      <button
+        *ngIf="showControls"
+        class="btn-lightbox-carousel btn-prev"
+        (click)="onPrev()"
+      >
+        <i class="fas fa-arrow-circle-left icon-lightbox-caraousel icon-prev">
+        </i>
+      </button>
+      <button
+        *ngIf="showControls"
+        class="btn-lightbox-carousel btn-next"
+        (click)="onNext()"
+      >
+        <i class="fas fa-arrow-circle-right icon-lightbox-caraousel icon-next">
+        </i>
+      </button>
+      <!-- [@animation]="{ value: 'visible' }"
+      (@animation.done)="onAnimationEnd($event)" -->
+      <div *ngIf="previewImage" class="lightbox-img">
+        <img
+          [src]="currentLightboxImage.imageSrc"
+          [alt]="currentLightboxImage.imageAlt"
+        />
+      </div>
+    </div>
+  </div>
+</div>

@@ -10,30 +10,33 @@ import { ProjectSliderComponent } from './components/project-slider/project-slid
 import { TabsComponent } from './components/tabs/tabs.component';
 import { ProjectRoutingModule } from '../projects/projects-routing.module';
 import { FooterComponent } from './components/footer/footer.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 @NgModule({
   declarations: [
     ButtonComponent,
+    FooterComponent,
+    GalleryComponent,
     HeaderComponent,
     LogoComponent,
-    NavComponent,
-    SectionHeadingComponent,
     LogoIconComponent,
+    NavComponent,
     ProjectSliderComponent,
+    SectionHeadingComponent,
     TabsComponent,
-    FooterComponent,
   ],
   imports: [CommonModule, ProjectRoutingModule],
   exports: [
     ButtonComponent,
+    FooterComponent,
+    GalleryComponent,
     HeaderComponent,
     LogoComponent,
-    NavComponent,
-    SectionHeadingComponent,
     LogoIconComponent,
+    NavComponent,
     ProjectSliderComponent,
+    SectionHeadingComponent,
     TabsComponent,
-    FooterComponent
   ],
 })
 export class SharedModule {}

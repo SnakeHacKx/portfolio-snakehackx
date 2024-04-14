@@ -14,15 +14,15 @@
         "../assets/images/projects/gallery/mobile/fap/04.png"
       ],
       "skillsAndTools": [
-        {
-          "id": "flutter"
-        },
-        {
-          "id": "dart"
-        },
-        {
-          "id": "nest"
-        }
+        { "id": "flutter" },
+        { "id": "dart" },
+        { "id": "nest" },
+        { "id": "node" },
+        { "id": "postgres" },
+        { "id": "ts" },
+        { "id": "docker" },
+        { "id": "vscode" },
+        { "id": "apollo" }
       ]
     },
     {
@@ -36,7 +36,16 @@
         "../assets/images/projects/gallery/mobile/chat/02.png",
         "../assets/images/projects/gallery/mobile/chat/03.png"
       ],
-      "skillsAndTools": ["Flutter", "Dart", "NestJS"]
+      "skillsAndTools": [
+        { "id": "flutter" },
+        { "id": "dart" },
+        { "id": "mongo" },
+        { "id": "jwt" },
+        { "id": "node" },
+        { "id": "js" },
+        { "id": "socket-io" },
+        { "id": "express" }
+      ]
     },
     {
       "id": "ma-003",

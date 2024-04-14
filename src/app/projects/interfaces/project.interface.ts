@@ -1,3 +1,5 @@
+import { SkillInterface } from './skills-tools.interface';
+
 export interface Project {
   id: string;
   heading: string;
@@ -6,5 +8,5 @@ export interface Project {
   poster: string;
   develping?: boolean;
   images: string[];
-  skillsAndTools: string[];
+  skillsAndTools: SkillInterface[];
 }

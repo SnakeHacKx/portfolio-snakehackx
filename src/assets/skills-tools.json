@@ -57,6 +57,24 @@
       "name": "SQL Server",
       "iconName": "icon-sql-server",
       "url": "https://www.microsoft.com/en-us/sql-server/sql-server-downloads"
+    },
+    {
+      "id": "jwt",
+      "name": "Json Web Tocken",
+      "iconName": "icon-jwt",
+      "url": "https://jwt.io/"
+    },
+    {
+      "id": "socket-io",
+      "name": "Socket.IO",
+      "iconName": "icon-socket-io",
+      "url": "https://socket.io/"
+    },
+    {
+      "id": "express",
+      "name": "Express",
+      "iconName": "icon-express",
+      "url": "https://expressjs.com/"
     }
   ],
   "skills-programming": [
@@ -160,6 +178,12 @@
       "name": "Postman",
       "iconName": "icon-postman",
       "url": "https://www.postman.com/"
+    },
+    {
+      "id": "apollo",
+      "name": "Apollo Studio",
+      "iconName": "icon-apollo",
+      "url": "https://www.apollographql.com/docs/apollo-server/"
     },
     {
       "id": "powerbi",
