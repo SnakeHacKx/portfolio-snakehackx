@@ -14,8 +14,9 @@
 
   // z-index: -1;
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
-    url("../../../../assets/images/projects/mobile/findapro/poster.jpg");
+  h3 {
+    margin-top: 0;
+  }
 
   &__subheading {
     font-weight: 100;
@@ -23,11 +24,16 @@
     margin-bottom: -1rem;
   }
 
+  &__developing {
+    margin-top: 0;
+    color: var(--color-primary-light);
+  }
+
   &__box {
     position: absolute;
     bottom: 5%;
     left: 5%;
-    width: 50%;
+    width: 40%;
     // transform: translate(20%, -30%);
 
     text-align: left;
@@ -44,10 +50,6 @@
     display: flex;
     justify-content: left;
     gap: 2rem;
-  }
-
-  h3 {
-    margin-top: 5rem;
   }
 
   .btn-back {

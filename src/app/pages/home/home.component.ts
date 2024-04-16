@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit {
     'Diseño',
     'Herramientas',
     'Videojuegos',
+    'Cloud',
     'Otras',
   ];
 
@@ -30,7 +31,6 @@ export class HomeComponent implements OnInit {
     'Videojuegos',
     'Ingeniería',
     'Machine Learning',
-    'Otros',
   ];
 
   mobileAppsProjects: Project[] = [];
@@ -40,7 +40,6 @@ export class HomeComponent implements OnInit {
   gamesProjects: Project[] = [];
   engineeringProjects: Project[] = [];
   machineLearningProjects: Project[] = [];
-  otherProjects: Project[] = [];
 
   frontendSkills: SkillInterface[] = [];
   backendSkills: SkillInterface[] = [];
@@ -48,6 +47,7 @@ export class HomeComponent implements OnInit {
   designSkills: SkillInterface[] = [];
   toolsSkills: SkillInterface[] = [];
   gamesSkills: SkillInterface[] = [];
+  cloudSkills: SkillInterface[] = [];
   otherSkills: SkillInterface[] = [];
 
   skillTabIndex: number = 0;
@@ -77,6 +77,7 @@ export class HomeComponent implements OnInit {
       this.designSkills = data['skills-design'] || [];
       this.toolsSkills = data['skills-tools'] || [];
       this.gamesSkills = data['skills-games'] || [];
+      this.cloudSkills = data['skills-cloud'] || [];
       this.otherSkills = data['skills-other'] || [];
     });
   }
@@ -99,15 +100,25 @@ export class HomeComponent implements OnInit {
   }
 
   getSkillsByTab(index: number): SkillInterface[] {
-    switch(index) {
-      case 0: return this.frontendSkills;
-      case 1: return this.backendSkills;
-      case 2: return this.programmingSkills;
-      case 3: return this.designSkills;
-      case 4: return this.toolsSkills;
-      case 5: return this.gamesSkills;
-      case 6: return this.otherSkills;
-      default: return [];
+    switch (index) {
+      case 0:
+        return this.frontendSkills;
+      case 1:
+        return this.backendSkills;
+      case 2:
+        return this.programmingSkills;
+      case 3:
+        return this.designSkills;
+      case 4:
+        return this.toolsSkills;
+      case 5:
+        return this.gamesSkills;
+      case 6:
+        return this.cloudSkills;
+      case 7:
+        return this.otherSkills;
+      default:
+        return [];
     }
   }
 }

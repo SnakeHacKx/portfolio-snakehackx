@@ -1,5 +1,13 @@
 <main>
-  <section class="section-project-hero">
+  <section
+    class="section-project-hero"
+    [ngStyle]="{
+      background:
+        'linear-gradient(rgba(8, 9, 29, 0), rgba(8, 9, 29, 1)), url(' +
+        project?.poster +
+        ')'
+    }"
+  >
     <shared-button
       class="btn-back"
       iconName="icon-back"
@@ -11,19 +19,25 @@
       <h1 class="section-project-hero__heading">
         {{ project?.heading }}
       </h1>
+      <h3 class="section-project-hero__developing" *ngIf="project?.develping">En desarrollo</h3>
       <p>
         {{ project?.description }}
       </p>
       <div class="section-project-hero__buttons">
         <shared-button
+          *ngIf="project?.demoUrl"
           iconName="icon-view"
           textContent="Demo"
           buttonType="primary"
+          (click)="openUrl(project?.demoUrl!)"
         ></shared-button>
+
         <shared-button
+          *ngIf="project?.codeUrl"
           iconName="icon-code"
           textContent="Código fuente"
           buttonType="primary"
+          (click)="openUrl(project?.codeUrl!)"
         ></shared-button>
       </div>
     </div>

@@ -51,4 +51,8 @@ export class ProjectPageComponent implements OnInit {
     const columnCount = Math.min(5, skills.length || 1);
     return `repeat(${columnCount}, 1fr)`;
   }
+
+  openUrl(url: string) {
+    window.open(url, '_blank');
+  }
 }

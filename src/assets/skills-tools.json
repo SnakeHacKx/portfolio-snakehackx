@@ -19,6 +19,18 @@
       "name": "Flutter",
       "iconName": "icon-flutter",
       "url": "https://flutter.dev/"
+    },
+    {
+      "id": "riverpod",
+      "name": "Flutter Riverpod",
+      "iconName": "icon-riverpod",
+      "url": "https://riverpod.dev/"
+    },
+    {
+      "id": "wp",
+      "name": "WordPress",
+      "iconName": "icon-wp",
+      "url": "https://wordpress.com/es/"
     }
   ],
   "skills-backend": [
@@ -60,7 +72,7 @@
     },
     {
       "id": "jwt",
-      "name": "Json Web Tocken",
+      "name": "Json Web Token",
       "iconName": "icon-jwt",
       "url": "https://jwt.io/"
     },
@@ -75,6 +87,12 @@
       "name": "Express",
       "iconName": "icon-express",
       "url": "https://expressjs.com/"
+    },
+    {
+      "id": "json",
+      "name": "Json",
+      "iconName": "icon-json",
+      "url": ""
     }
   ],
   "skills-programming": [
@@ -190,6 +208,12 @@
       "name": "Power BI",
       "iconName": "icon-powerbi",
       "url": "https://www.microsoft.com/en-us/power-platform/products/power-bi"
+    },
+    {
+      "id": "colab",
+      "name": "Google Colab",
+      "iconName": "icon-colab",
+      "url": "https://colab.google/"
     }
   ],
   "skills-games": [
@@ -210,6 +234,20 @@
       "name": "Game Design Document",
       "iconName": "icon-gdd",
       "url": ""
+    }
+  ],
+  "skills-cloud": [
+    {
+      "id": "g-cloud",
+      "name": "Google Cloud",
+      "iconName": "icon-g-cloud",
+      "url": "https://cloud.google.com/"
+    },
+    {
+      "id": "cloudinary",
+      "name": "Cloudinary",
+      "iconName": "icon-cloudinary",
+      "url": "https://cloudinary.com/"
     }
   ],
   "skills-other": [

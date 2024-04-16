@@ -167,7 +167,7 @@
     ></shared-tabs>
 
     <div class="section-skills__grid-container">
-      <ng-container *ngFor="let tab of skillsTabs; let i = index">
+      <ng-container *ngFor="let tab of skillsTabs; let i = index;">
         <div
           *ngIf="skillTabIndex === i"
           [class]="['skills-grid', tab.toLowerCase().replace(' ', '-')]"
@@ -229,11 +229,6 @@
     <shared-project-slider
       [projects]="machineLearningProjects"
       *ngIf="projectTabIndex == 6"
-    />
-
-    <shared-project-slider
-      [projects]="otherProjects"
-      *ngIf="projectTabIndex == 7"
     />
 
     <!-- <router-outlet></router-outlet> -->

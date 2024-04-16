@@ -47,6 +47,7 @@ export class GalleryComponent implements OnInit {
   }
 
   onPreviewImage(index: number): void {
+    document.body.style.overflow = 'hidden';
     this.showMask = true;
     this.previewImage = true;
     this.currentGalleryIndex = index;
@@ -54,6 +55,7 @@ export class GalleryComponent implements OnInit {
   }
 
   onClosePreview() {
+    document.body.style.overflow = 'auto';
     this.previewImage = false;
     this.showMask = false;
   }

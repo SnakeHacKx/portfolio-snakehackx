@@ -7,13 +7,13 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class ButtonComponent {
   @Input() textContent: string = '';
-  @Input() buttonType: string = 'primary';
+  @Input() buttonType: 'primary' | 'secondary' | 'tertiary' = 'primary';
 
   @Input() iconName?: string = ''; // El nombre del ícono del sprite
   @Input() iconCustomClass: string = '';
   private baseSvgPath: string = '../../../assets/icons/sprite.svg#';
 
-  @Output() buttonClick = new EventEmitter<any>();
+  @Output() buttonClick = new EventEmitter<void>();
 
   get fullPath(): string {
     return `${this.baseSvgPath}${this.iconName}`;

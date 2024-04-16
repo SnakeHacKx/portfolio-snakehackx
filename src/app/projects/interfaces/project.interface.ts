@@ -10,4 +10,6 @@ export interface Project {
   develping?: boolean;
   images: Item[];
   skillsAndTools: SkillInterface[];
+  codeUrl?: string;
+  demoUrl?: string;
 }
