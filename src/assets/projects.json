@@ -750,13 +750,63 @@
       "id": "gp-001",
       "heading": "Rotten Souls Prototype",
       "year": "2020",
-      "description": "Prototipo de un videojuego propio de género metroidvania llamado Rotten Souls. El juego explora mecánicas de exploración, combate y resolución de puzzles en un mundo oscuro y envolvente.",
-      "poster": "../../../assets/images/projects/games/rottensouls.jpg",
+      "description": "Prototipo de un videojuego propio de género metroidvania llamado Rotten Souls. Este prototipo trae mecánicas de exploración y combate en un mundo oscuro y envolvente.",
+      "poster": "../assets/images/projects/games/rs-prototype/poster.webp",
       "images": [
-        "../../../assets/images/projects/gallery/games/rottensouls/01.png",
-        "../../../assets/images/projects/gallery/games/rottensouls/02.png"
+        {
+          "imageSrc": "../assets/images/projects/games/rs-prototype/01.png",
+          "imageAlt": "1"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/rs-prototype/02.png",
+          "imageAlt": "2"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/rs-prototype/03.png",
+          "imageAlt": "3"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/rs-prototype/04.png",
+          "imageAlt": "4"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/rs-prototype/05.png",
+          "imageAlt": "5"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/rs-prototype/06.png",
+          "imageAlt": "6"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/rs-prototype/07.png",
+          "imageAlt": "7"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/rs-prototype/08.png",
+          "imageAlt": "8"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/rs-prototype/09.png",
+          "imageAlt": "9"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/rs-prototype/10.png",
+          "imageAlt": "10"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/rs-prototype/11.png",
+          "imageAlt": "11"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/rs-prototype/12.png",
+          "imageAlt": "12"
+        }
       ],
-      "skillsAndTools": ["Unity", "C#", "2D Art", "Game Design"]
+      "skillsAndTools": [
+        { "id": "unity" },
+        { "id": "csharp" },
+        { "id": "game-design" }
+      ]
     },
     {
       "id": "gp-002",
