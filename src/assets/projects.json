@@ -933,10 +933,48 @@
       "heading": "Juego RPG",
       "year": "2020",
       "description": "Prototipo de Videojuego 2D de género RPG para computadoras y consolas. Este proyecto destaca por su narrativa profunda, sistemas de combate por turnos y exploración interactiva.",
-      "poster": "../../../assets/images/projects/games/rpggame.jpg",
+      "poster": "../assets/images/projects/games/rpg/poster.webp",
       "images": [
-        "../../../assets/images/projects/gallery/games/rpggame/01.png",
-        "../../../assets/images/projects/gallery/games/rpggame/02.png"
+        {
+          "imageSrc": "../assets/images/projects/games/rpg/01.png",
+          "imageAlt": "1"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/rpg/02.png",
+          "imageAlt": "2"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/rpg/03.png",
+          "imageAlt": "3"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/rpg/04.png",
+          "imageAlt": "4"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/rpg/05.png",
+          "imageAlt": "5"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/rpg/06.png",
+          "imageAlt": "6"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/rpg/07.png",
+          "imageAlt": "7"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/rpg/08.png",
+          "imageAlt": "8"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/rpg/09.png",
+          "imageAlt": "9"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/rpg/10.png",
+          "imageAlt": "10"
+        }
       ],
       "skillsAndTools": [
         "Unreal Engine",
