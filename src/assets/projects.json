@@ -272,10 +272,20 @@
       "heading": "Natours",
       "year": "2024",
       "description": "Página web estática hecha con HTML5 y SASS.",
-      "poster": "../assets/images/projects/webs/natours/",
+      "poster": "../assets/images/projects/webs/natours/poster.jpeg",
       "images": [
-        "../../../assets/images/projects/gallery/web/natours/01.jpg",
-        "../../../assets/images/projects/gallery/web/natours/02.jpg"
+        {
+          "imageSrc": "../assets/images/projects/webs/natours/01.png",
+          "imageAlt": "1"
+        },
+        {
+          "imageSrc": "../assets/images/projects/webs/natours/02.png",
+          "imageAlt": "2"
+        },
+        {
+          "imageSrc": "../assets/images/projects/webs/natours/03.png",
+          "imageAlt": "3"
+        }
       ],
       "skillsAndTools": [{ "id": "html" }, { "id": "css" }, { "id": "sass" }]
     },
@@ -284,10 +294,32 @@
       "heading": "FixPanama",
       "year": "2022",
       "description": "Página web básica desarrollada en WordPress para la empresa FixPanama ubicada en la Ciudad de Panamá.",
-      "poster": "../../../assets/images/projects/web/",
+      "poster": "../assets/images/projects/webs/fixpanama/poster.jpg",
       "images": [
-        "../../../assets/images/projects/gallery/web/fixpanama/01.jpg",
-        "../../../assets/images/projects/gallery/web/fixpanama/02.jpg"
+        {
+          "imageSrc": "../assets/images/projects/webs/fixpanama/01.png",
+          "imageAlt": "1"
+        },
+        {
+          "imageSrc": "../assets/images/projects/webs/fixpanama/02.png",
+          "imageAlt": "2"
+        },
+        {
+          "imageSrc": "../assets/images/projects/webs/fixpanama/03.png",
+          "imageAlt": "3"
+        },
+        {
+          "imageSrc": "../assets/images/projects/webs/fixpanama/04.png",
+          "imageAlt": "4"
+        },
+        {
+          "imageSrc": "../assets/images/projects/webs/fixpanama/05.png",
+          "imageAlt": "5"
+        },
+        {
+          "imageSrc": "../assets/images/projects/webs/fixpanama/06.png",
+          "imageAlt": "6"
+        }
       ],
       "skillsAndTools": [{ "id": "wp" }]
     }
@@ -298,80 +330,168 @@
       "heading": "Frigg",
       "year": "2020",
       "description": "Diseño UI/UX y prototipado en Figma de una aplicación de citas para dispositivos móviles.",
-      "poster": "../../../assets/images/projects/design/frigg.jpg",
+      "poster": "../assets/images/projects/designs/frigg/poster.png",
       "images": [
-        "../../../assets/images/projects/gallery/design/frigg/01.png",
-        "../../../assets/images/projects/gallery/design/frigg/02.png"
+        {
+          "imageSrc": "../assets/images/projects/designs/frigg/01.png",
+          "imageAlt": "1"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/frigg/02.png",
+          "imageAlt": "2"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/frigg/03.png",
+          "imageAlt": "3"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/frigg/04.png",
+          "imageAlt": "4"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/frigg/05.png",
+          "imageAlt": "5"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/frigg/06.png",
+          "imageAlt": "6"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/frigg/07.png",
+          "imageAlt": "7"
+        }
       ],
-      "skillsAndTools": ["Figma", "Adobe XD", "UI/UX Design"]
+      "skillsAndTools": [{ "id": "figma" }]
     },
     {
       "id": "dp-002",
       "heading": "FindAPro",
       "year": "2020",
       "description": "Diseño UI/UX y prototipo en Figma de una aplicación de bolsa de rabajo para dispositivos móviles.",
-      "poster": "../../../assets/images/projects/design/findapro.jpg",
+      "poster": "../assets/images/projects/designs/findapro/poster.jpg",
       "images": [
-        "../../../assets/images/projects/gallery/design/findapro/01.png",
-        "../../../assets/images/projects/gallery/design/findapro/02.png"
+        {
+          "imageSrc": "../assets/images/projects/designs/findapro/01.png",
+          "imageAlt": "1"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/findapro/02.png",
+          "imageAlt": "2"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/findapro/03.png",
+          "imageAlt": "3"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/findapro/04.png",
+          "imageAlt": "4"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/findapro/05.png",
+          "imageAlt": "5"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/findapro/06.png",
+          "imageAlt": "6"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/findapro/07.png",
+          "imageAlt": "7"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/findapro/08.png",
+          "imageAlt": "8"
+        }
       ],
-      "skillsAndTools": ["Figma", "User Flow", "Wireframing"]
-    },
-    {
-      "id": "dp-003",
-      "heading": "Sistema de Recomendación",
-      "year": "2022",
-      "description": "Diseño UI/UX y prototipado en Figma sobre una aplicación móvil creada para una asignatura universitaria llamada Sistemas Basados en el Conocimiento.",
-      "poster": "../../../assets/images/projects/design/recommendation.jpg",
-      "images": [
-        "../../../assets/images/projects/gallery/design/recommendation/01.png",
-        "../../../assets/images/projects/gallery/design/recommendation/02.png"
-      ],
-      "skillsAndTools": [
-        "Figma",
-        "Adobe Illustrator",
-        "Information Architecture"
-      ]
-    },
-    {
-      "id": "dp-005",
-      "heading": "Finance Admin",
-      "year": "2022",
-      "description": "Diseño UI/UX y prototipado en Figma sobre una aplicación web la cual se encarga de administrar los gastos de una cevichería y casa.",
-      "poster": "../../../assets/images/projects/design/financeadmin.jpg",
-      "images": [
-        "../../../assets/images/projects/gallery/design/financeadmin/01.png",
-        "../../../assets/images/projects/gallery/design/financeadmin/02.png"
-      ],
-      "skillsAndTools": ["Figma", "Sketch", "User Testing"]
+      "skillsAndTools": [{ "id": "figma" }]
     },
     {
       "id": "dp-006",
       "heading": "Sistema de Calificación UTP",
       "year": "2022",
       "description": "Diseño UI/UX y prototipado en Figma sobre una aplicación web a modo de sugerencia a la Universidad Tecnológica de Panamá para el cambio de interfaz e hsitorial de notas de los estudiantes.",
-      "poster": "../../../assets/images/projects/design/utpgrading.jpg",
+      "poster": "../assets/images/projects/designs/utp/poster.jpg",
       "images": [
-        "../../../assets/images/projects/gallery/design/utpgrading/01.png",
-        "../../../assets/images/projects/gallery/design/utpgrading/02.png"
+        {
+          "imageSrc": "../assets/images/projects/designs/utp/01.png",
+          "imageAlt": "1"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/utp/02.png",
+          "imageAlt": "2"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/utp/03.png",
+          "imageAlt": "3"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/utp/04.png",
+          "imageAlt": "4"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/utp/05.png",
+          "imageAlt": "5"
+        }
       ],
-      "skillsAndTools": ["Figma", "User Experience Design", "Prototyping"]
+      "skillsAndTools": [{ "id": "figma" }]
     },
     {
       "id": "dp-007",
       "heading": "Portafolio Web Personal",
       "year": "2024",
-      "description": "Diseño UI/UX y prototipado en Figma una web estática que serviría como portafolio.",
-      "poster": "../../../assets/images/projects/design/personalweb.jpg",
+      "description": "Diseño UI/UX y prototipado en Figma de la página web de mi portafolio.",
+      "poster": "../assets/images/projects/designs/portfolio/poster.jpg",
       "images": [
-        "../../../assets/images/projects/gallery/design/personalweb/01.png",
-        "../../../assets/images/projects/gallery/design/personalweb/02.png"
+        {
+          "imageSrc": "../assets/images/projects/designs/portfolio/01.png",
+          "imageAlt": "1"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/portfolio/02.png",
+          "imageAlt": "2"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/portfolio/03.png",
+          "imageAlt": "3"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/portfolio/04.png",
+          "imageAlt": "4"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/portfolio/05.png",
+          "imageAlt": "5"
+        }
       ],
-      "skillsAndTools": ["Figma", "Adobe Photoshop", "Web Design"]
+      "skillsAndTools": [{ "id": "figma" }]
     },
     {
       "id": "dp-008",
       "heading": "Comercial de Botellas",
+      "year": "2021",
+      "description": "Proyecto en donde se utilizan conceptos de sistemas de ilumicación en Blender.",
+      "poster": "../assets/images/projects/designs/bottles/poster.jpg",
+      "images": [
+        {
+          "imageSrc": "../assets/images/projects/designs/bottles/01.png",
+          "imageAlt": "1"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/bottles/02.png",
+          "imageAlt": "2"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/bottles/03.png",
+          "imageAlt": "3"
+        }
+      ],
+      "skillsAndTools": [{ "id": "blender" }, { "id": "pr" }],
+      "codeUrl": "",
+      "demoUrl": "https://www.youtube.com/watch?v=JDkG_9Y7nTw"
+    },
+    {
+      "id": "dp-009",
+      "heading": "Proyecto de HCI",
       "year": "2021",
       "description": "Proyecto en donde se utilizan conceptos de sistemas de ilumicación en Blender.",
       "poster": "../../../assets/images/projects/design/personalweb.jpg",
@@ -823,6 +943,44 @@
         "Blueprints",
         "3D Modeling",
         "Narrative Development"
+      ]
+    },
+    {
+      "id": "gp-003",
+      "heading": "2D Platformer",
+      "year": "2020",
+      "description": "Videojuego en el cual se exploran las mecánicas básicas de cual quiero videojuego plataformas 2D.",
+      "poster": "../assets/images/projects/games/2d-platformer/poster.webp",
+      "images": [
+        {
+          "imageSrc": "../assets/images/projects/games/2d-platformer/01.png",
+          "imageAlt": "1"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/2d-platformer/02.png",
+          "imageAlt": "2"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/2d-platformer/03.png",
+          "imageAlt": "3"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/2d-platformer/04.png",
+          "imageAlt": "4"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/2d-platformer/05.png",
+          "imageAlt": "5"
+        },
+        {
+          "imageSrc": "../assets/images/projects/games/2d-platformer/06.png",
+          "imageAlt": "6"
+        }
+      ],
+      "skillsAndTools": [
+        { "id": "unity" },
+        { "id": "csharp" },
+        { "id": "game-design" }
       ]
     }
   ],

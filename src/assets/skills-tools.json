@@ -161,9 +161,15 @@
     },
     {
       "id": "ps",
-      "name": "Photoshop",
+      "name": "Adobe Photoshop",
       "iconName": "icon-ps",
       "url": "https://www.adobe.com/products/photoshop.html"
+    },
+    {
+      "id": "pr",
+      "name": "Adobe Premiere",
+      "iconName": "icon-pr",
+      "url": "https://www.adobe.com/la/products/premiere.html"
     }
   ],
   "skills-tools": [
@@ -214,6 +220,18 @@
       "name": "Google Colab",
       "iconName": "icon-colab",
       "url": "https://colab.google/"
+    },
+    {
+      "id": "pycharm",
+      "name": "PyCharm",
+      "iconName": "icon-pycharm",
+      "url": "https://www.jetbrains.com/es-es/pycharm/"
+    },
+    {
+      "id": "rider",
+      "name": "Rider",
+      "iconName": "icon-rider",
+      "url": "https://www.jetbrains.com/es-es/rider/"
     }
   ],
   "skills-games": [

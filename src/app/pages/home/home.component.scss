@@ -16,13 +16,26 @@
   // transform: translateY(-100px);
 
   // z-index: -1;
-
   background-image: linear-gradient(
-      to right bottom,
-      rgba(#4a06f6, 0.5),
-      rgba(#1e0069, 0.7)
+      to bottom,
+      rgba(8, 9, 29, 0.7),
+      rgba(8, 9, 29, 0.7)
     ),
-    url("../../../assets/images/bg-hero-02.jpg");
+    linear-gradient(
+      to bottom,
+      rgba(8, 9, 29, 0.8) 0%,
+      rgba(8, 9, 29, 0) 20%,
+      rgba(8, 9, 29, 0) 80%,
+      rgba(8, 9, 29, 1) 100%
+    ),
+    url("../../../assets/images/bg-hero-04.webp");
+
+  // background-image: linear-gradient(
+  //     to right bottom,
+  //     rgba(#1e0069, 0.5),
+  //     rgba(#1e0069, 0.7)
+  //   ),
+  //   url("../../../assets/images/bg-hero-03.webp");
 
   &__box {
     position: absolute;
