@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Project } from '../../projects/interfaces/project.interface';
 import { SharedService } from '../../shared/services/shared.service';
 import { ProjectsService } from '../../projects/services/projects.service';
@@ -52,6 +52,7 @@ export class HomeComponent implements OnInit {
 
   skillTabIndex: number = 0;
   projectTabIndex: number = 0;
+  gridColumnTemplate: string = 'repeat(3, 1fr)';
 
   constructor(
     private sharedService: SharedService,
@@ -79,11 +80,14 @@ export class HomeComponent implements OnInit {
       this.gamesSkills = data['skills-games'] || [];
       this.cloudSkills = data['skills-cloud'] || [];
       this.otherSkills = data['skills-other'] || [];
+
+      this.updateGridColumns(window.innerWidth);
     });
   }
 
   skillTabChanged(tabIndex: number): void {
     this.skillTabIndex = tabIndex;
+    this.updateGridColumns(window.innerWidth); // Actualizar el número de columnas cuando cambia el tab
   }
 
   projectTabChanged(tabIndex: number): void {
@@ -94,9 +98,18 @@ export class HomeComponent implements OnInit {
     this.sharedService.scrollToSection(sectionId);
   }
 
-  getGridTemplateColumns(skills: any[]): string {
-    const columns = Math.min(5, skills.length);
-    return `repeat(${columns}, 1fr)`;
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.updateGridColumns(event.target.innerWidth);
+  }
+
+  updateGridColumns(width: number): void {
+    const skills = this.getSkillsByTab(this.skillTabIndex);
+    const numSkills = skills.length;
+    const maxColumns = width < 600 ? 2 : width >= 600 && width < 960 ? 3 : 4;
+
+    // El número de columnas será el menor entre el número máximo y la cantidad de habilidades
+    this.gridColumnTemplate = `repeat(${Math.min(maxColumns, numSkills)}, 1fr)`;
   }
 
   getSkillsByTab(index: number): SkillInterface[] {

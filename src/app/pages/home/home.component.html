@@ -100,7 +100,10 @@
 
           <div class="info-item">
             <strong>Concurso Cybertech Latin America - TechPrendedores</strong>
-            <p>Proyecto <a [routerLink]="['/projects', 'ma-001']">FindAPro</a> / Segundo Lugar / 2023</p>
+            <p>
+              Proyecto <a [routerLink]="['/projects', 'ma-001']">FindAPro</a> /
+              Segundo Lugar / 2023
+            </p>
           </div>
         </div>
 
@@ -171,9 +174,7 @@
         <div
           *ngIf="skillTabIndex === i"
           [class]="['skills-grid', tab.toLowerCase().replace(' ', '-')]"
-          [ngStyle]="{
-            'grid-template-columns': getGridTemplateColumns(getSkillsByTab(i))
-          }"
+          [ngStyle]="{ 'grid-template-columns': gridColumnTemplate }"
         >
           <shared-logo-icon
             *ngFor="let skill of getSkillsByTab(i)"
