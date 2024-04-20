@@ -1,3 +1,8 @@
+.icon-name {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
 .icon-box {
   align-self: stretch;
 
@@ -29,7 +34,8 @@
 
   span {
     color: var(--color-white);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
 
