@@ -4,6 +4,7 @@
 @import "pages/home/home.component.scss";
 @import "../app/projects/pages/project-page/project-page.component.scss";
 @import "../scss/typography";
+@import "../scss/mixins";
 
 :root {
   // Colors
@@ -39,8 +40,24 @@
 
 html {
   // Define que es 1rem
-  font-size: 62.5%;
+  font-size: 62.5%; // 1rem = 10px
   scroll-behavior: smooth;
+
+  @include respond(tab-land) {
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; // 1rem = 8px
+  }
+
+  // @include respond(phone) {
+  //   font-size: 40%; // 1rem = 8px
+  // }
+
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem = 12px
+  }
 }
 
 body {

@@ -1,3 +1,5 @@
+@import "../../../scss/mixins.scss";
+
 .separator {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -13,9 +15,7 @@
   background-position: top;
   position: relative;
   height: 100vh;
-  // transform: translateY(-100px);
 
-  // z-index: -1;
   background-image: linear-gradient(
       to bottom,
       rgba(8, 9, 29, 0.7),
@@ -29,13 +29,6 @@
       rgba(8, 9, 29, 1) 100%
     ),
     url("../../../assets/images/bg-hero-04.webp");
-
-  // background-image: linear-gradient(
-  //     to right bottom,
-  //     rgba(#1e0069, 0.5),
-  //     rgba(#1e0069, 0.7)
-  //   ),
-  //   url("../../../assets/images/bg-hero-03.webp");
 
   &__box {
     position: absolute;
@@ -91,12 +84,10 @@
   }
 
   &__info-container {
-    // background-color: #1e0069;
     grid-column: cennbhgter-start / center-end;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    // grid-template-rows: auto auto;
     grid-gap: 5rem;
 
     margin-top: 3rem;
@@ -109,8 +100,6 @@
 
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      // grid-template-rows: auto auto;
-      // grid-gap: 5rem;
       grid-row-gap: 3rem;
       grid-column-gap: 5rem;
     }
@@ -144,12 +133,6 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-
-  __flag {
-  }
-
-  __text {
-  }
 }
 
 .section-skills {
@@ -176,37 +159,7 @@
   grid-gap: 2rem;
   margin-top: 2rem;
   column-gap: 5rem;
-  // grid-template-columns: repeat(5, 1fr);
 }
-
-// .skills-frontend {
-//   //   max-width: max-content;
-//   grid-template-columns: repeat(5, 1fr);
-// }
-
-// .skills-backend {
-//   grid-template-columns: repeat(6, 1fr);
-// }
-
-// .skills-programming {
-//   grid-template-columns: repeat(7, 1fr);
-// }
-
-// .skills-tools {
-//   grid-template-columns: repeat(6, 1fr);
-// }
-
-// .skills-design {
-//   grid-template-columns: repeat(4, 1fr);
-// }
-
-// .skills-games {
-//   grid-template-columns: repeat(3, 1fr);
-// }
-
-// .skills-other {
-//   grid-template-columns: repeat(6, 1fr);
-// }
 
 .section-projects {
   margin-top: 5rem;
@@ -220,7 +173,6 @@
   &__buttons {
     display: flex;
     gap: 2rem;
-    // background-color: #4a06f6;
   }
 }
 
@@ -238,7 +190,6 @@
   }
 
   &__heading {
-    // background-color: #4a06f6;
     width: 50%;
 
     h2 {
@@ -250,13 +201,11 @@
 
     .content {
       width: 50%;
-      // background-color: rgb(78, 145, 122);
       transform: translateX(100%);
     }
   }
 
   &__form {
     width: 50%;
-    // background-color: #42bd75;
   }
 }
