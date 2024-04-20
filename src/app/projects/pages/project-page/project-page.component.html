@@ -54,9 +54,7 @@
     ></shared-section-heading>
     <div
       class="required-skills"
-      [ngStyle]="{
-        'grid-template-columns': getGridTemplateColumns(projectSkills)
-      }"
+      [ngStyle]="{ 'grid-template-columns': gridColumnTemplate }"
     >
       <shared-logo-icon
         *ngFor="let skill of projectSkills"
