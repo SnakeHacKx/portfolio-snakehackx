@@ -2,7 +2,7 @@
   <div class="slide">
     <div
       class="slide__item"
-      *ngFor="let project of projects; let i = index"
+      *ngFor="let project of projects; let i = index;"
       [ngStyle]="{ 'background-image': 'url(' + project.poster + ')' }"
       [class.active]="isActive(i)"
       [class.next]="isNext(i, 1)"

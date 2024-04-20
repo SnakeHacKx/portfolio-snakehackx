@@ -15,6 +15,8 @@ export class ProjectPageComponent implements OnInit {
   public project?: Project;
   public projectSkills: SkillInterface[] = [];
 
+  gridColumnTemplate: string = 'repeat(3, 1fr)';
+
   constructor(
     private activatedRoute: ActivatedRoute,
     private projectsService: ProjectsService,

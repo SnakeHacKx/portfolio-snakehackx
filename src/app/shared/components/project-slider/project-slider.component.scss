@@ -1,3 +1,5 @@
+@import "../../../../scss/mixins.scss";
+
 $box-shadow: 0 10px 20px #111111;
 
 .container {
@@ -6,6 +8,11 @@ $box-shadow: 0 10px 20px #111111;
   height: 60rem;
   margin-top: 2rem;
   margin-bottom: 5rem;
+
+  @include respond(tab-port) {
+    width: 90vw;
+    height: 60rem;
+  }
 
   .slide {
     border-radius: 20px;
@@ -74,6 +81,14 @@ $box-shadow: 0 10px 20px #111111;
         z-index: 20;
       }
 
+      &.next,
+      &.next2,
+      &.next3 {
+        @include respond(tab-port) {
+          display: none;
+        }
+      }
+
       // &.next,
       // &.next2,
       // &.next3 {
@@ -92,6 +107,14 @@ $box-shadow: 0 10px 20px #111111;
         display: none;
         animation: animate 1s ease-in-out 1 forwards;
 
+        @include respond(tab-port) {
+          width: 60%
+        }
+
+        @include respond(phone) {
+          width: 90%;
+        }
+
         .project-title {
           font-size: 3.8rem;
           font-weight: bold;
@@ -109,6 +132,7 @@ $box-shadow: 0 10px 20px #111111;
           margin-bottom: 20px;
           opacity: 0;
           animation: animate 1s ease-in-out 0.3s 1 forwards;
+          text-align: justify;
         }
 
         .button {

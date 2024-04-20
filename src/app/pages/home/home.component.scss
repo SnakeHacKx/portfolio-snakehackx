@@ -131,7 +131,7 @@
   }
 
   &__info-container {
-    grid-column: cennbhgter-start / center-end;
+    grid-column: center-start / center-end;
     // background-color: rebeccapurple;
 
     display: grid;
@@ -255,6 +255,9 @@
 
 .section-contact {
   margin-top: 5rem;
+  // background-color: rebeccapurple;
+  display: flex;
+  flex-direction: column;
 
   .contact-heading {
     display: flex;
@@ -263,26 +266,64 @@
 
   &__container {
     display: flex;
-    padding: 0 5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: normal;
+    gap: 2rem;
   }
 
   &__heading {
-    width: 50%;
-
     h2 {
       font-size: 3rem;
       line-height: 3.5rem;
       margin-top: 1.5rem;
       margin-bottom: 3rem;
     }
-
-    .content {
-      width: 50%;
-      transform: translateX(100%);
-    }
   }
 
   &__form {
     width: 50%;
+  }
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+
+  .info-item {
+    width: 35rem;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-radius: 20rem;
+    background-color: #1c1a1e;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    .copy-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+
+      .icon {
+        fill: #333; // Adjust color as needed
+      }
+    }
+
+    .info-text-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
   }
 }

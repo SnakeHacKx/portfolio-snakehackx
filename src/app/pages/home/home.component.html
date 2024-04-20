@@ -176,7 +176,6 @@
           [class]="['skills-grid', tab.toLowerCase().replace(' ', '-')]"
           [ngStyle]="{ 'grid-template-columns': gridColumnTemplate }"
         >
-
           <shared-logo-icon
             *ngFor="let skill of getSkillsByTab(i)"
             customClass="icon-skill"
@@ -242,17 +241,48 @@
       textContent="contacto"
     ></shared-section-heading>
     <div class="section-contact__container">
-      <div class="section-contact__heading">
-        <div class="content">
-          <h2>Hablemos de nuestro próximo proyecto</h2>
-          <shared-button
-            iconName="icon-whatsapp"
-            textContent="Chatéame"
-            buttonType="primary"
-          ></shared-button>
+      <h2>Hablemos de nuestro próximo proyecto</h2>
+      <shared-button
+        iconName="icon-whatsapp"
+        textContent="Chatéame"
+        buttonType="primary"
+      ></shared-button>
+      <div class="contact-info">
+        <div class="info-item">
+          <div class="info-text-icon">
+            <svg class="icon" width="24" height="24">
+              <use
+                xlink:href="../../../assets/icons/sprite.svg#icon-phone"
+              ></use>
+            </svg>
+            <span class="info-text">+507 6242-9147</span>
+          </div>
+          <button class="copy-btn" (click)="copyText('+50762429147')">
+            <svg class="icon" width="24" height="24">
+              <use
+                xlink:href="../../../assets/icons/sprite.svg#icon-copy"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <div class="info-item">
+          <div class="info-text-icon">
+            <svg class="icon" width="24" height="24">
+              <use
+                xlink:href="../../../assets/icons/sprite.svg#icon-mail"
+              ></use>
+            </svg>
+            <span class="info-text">{{ email }}</span>
+          </div>
+          <button class="copy-btn" (click)="copyText('omar.medina@utp.ac.pa')">
+            <svg class="icon" width="24" height="24">
+              <use
+                xlink:href="../../../assets/icons/sprite.svg#icon-copy"
+              ></use>
+            </svg>
+          </button>
         </div>
       </div>
-      <!-- <div class="section-contact__form">Form</div> -->
     </div>
   </section>
 

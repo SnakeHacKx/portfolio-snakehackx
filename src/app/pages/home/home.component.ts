@@ -12,6 +12,8 @@ import { SkillInterface } from '../../projects/interfaces/skills-tools.interface
   styleUrl: './home.component.scss',
 })
 export class HomeComponent implements OnInit {
+  public email: string = 'omar.medina@utp.ac.pa';
+
   skillsTabs: string[] = [
     'Frontend',
     'Backend',
@@ -110,6 +112,17 @@ export class HomeComponent implements OnInit {
 
     // El número de columnas será el menor entre el número máximo y la cantidad de habilidades
     this.gridColumnTemplate = `repeat(${Math.min(maxColumns, numSkills)}, 1fr)`;
+  }
+
+  copyText(text: string) {
+    navigator.clipboard.writeText(text).then(
+      () => {
+        alert('Elemento copiado');
+      },
+      (err) => {
+        console.error('Failed to copy text: ', err);
+      }
+    );
   }
 
   getSkillsByTab(index: number): SkillInterface[] {

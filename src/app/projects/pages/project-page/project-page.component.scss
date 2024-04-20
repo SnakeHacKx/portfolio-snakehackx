@@ -1,3 +1,5 @@
+@import "../../../../scss/mixins.scss";
+
 :host {
   width: 100vw;
   height: 100vh;
@@ -38,10 +40,19 @@
 
     text-align: left;
 
+    @include respond(tab-port) {
+      width: 60%;
+    }
+
+    @include respond(phone) {
+      width: 80%;
+    }
+
     p {
       margin-top: 2rem;
       margin-bottom: 4rem;
       color: var(--color-white);
+      text-align: justify;
     }
   }
 
