@@ -132,12 +132,16 @@
 
   &__info-container {
     grid-column: cennbhgter-start / center-end;
+    // background-color: rebeccapurple;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5rem;
 
     margin-top: 3rem;
+    justify-content: center;
+    align-items: start;
+    width: 90%;
 
     @include respond(tab-port) {
       display: flex;
@@ -146,10 +150,29 @@
   }
 
   &__info {
+    &__education,
+    &__achievements,
+    &__hobbies,
+    &__lang {
+      // background-color: rgb(127, 65, 65);
+      width: 100%;
+    }
+
+    @include respond(tab-port) {
+      &__education,
+      &__achievements,
+      &__hobbies,
+      &__lang {
+        background-color: transparent;
+        width: 90%;
+      }
+    }
+
     &__hobby-grid {
-      width: 75%;
+      // width: 90%;
       grid-column: center-start / center-end;
 
+      margin-top: 1rem;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-row-gap: 3rem;

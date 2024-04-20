@@ -18,6 +18,28 @@ header {
   justify-content: center;
 
   box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+.menu-btn {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 100;
+
+  @include respond(phone) {
+    display: block;
+  }
 }
 
 .navbar {
@@ -45,5 +67,35 @@ header {
   & > *:hover {
     background-color: var(--color-white);
     color: #000;
+  }
+}
+
+.mobile-navbar {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5rem);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  overflow: hidden; // Evitar mostrar contenido externo durante animación
+  max-height: 0; // Iniciar sin mostrar contenido
+  transition: max-height 0.5s ease, opacity 0.5s ease; // Suavizar transición de altura y opacidad
+  opacity: 0; // Iniciar transparente
+  z-index: 99;
+
+  a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  &.open {
+    max-height: 500px; // Ajusta según el contenido necesario
+    opacity: 1; // Completamente visible
   }
 }

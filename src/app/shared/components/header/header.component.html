@@ -1,22 +1,50 @@
-<!-- <header class="header">
-  <div class="logo-nav">
-    <div class="logo_snakehackx"></div>
-    <shared-nav></shared-nav>
-  </div>
-
-  <shared-button
-    (buttonClick)="goToSection('contact')"
-    textContent="Contáctame"
-    buttonType="secondary"
-  ></shared-button>
-</header> -->
-
-<header class="header">
+<!-- HeaderComponent HTML -->
+<header class="header" *ngIf="!isMobile">
   <nav class="navbar">
-    <a href="#">Inicio</a>
-    <a href="#about">Sobre mí</a>
-    <a href="#skills">Habilidades</a>
-    <a href="#projects">Proyectos</a>
-    <a href="#contact">Contacto</a>
+    <a href="#" (click)="goToSection('inicio')">Inicio</a>
+    <a href="#" (click)="goToSection('about')">Sobre mí</a>
+    <a href="#" (click)="goToSection('skills')">Habilidades</a>
+    <a href="#" (click)="goToSection('projects')">Proyectos</a>
+    <a href="#" (click)="goToSection('contact')">Contacto</a>
   </nav>
 </header>
+<button class="menu-btn" *ngIf="isMobile" (click)="toggleMenu()">
+  <svg
+    class="icon"
+    [ngClass]="{ 'icon-menu': !isMenuOpen, 'icon-close': isMenuOpen }"
+    width="50"
+    height="50"
+    style="filter: url(#icon-shadow)"
+  >
+    <use
+      [attr.href]="
+        '../../../../assets/icons/sprite.svg#' +
+        (isMenuOpen ? 'icon-close' : 'icon-menu')
+      "
+    ></use>
+  </svg>
+</button>
+<nav class="mobile-navbar" *ngIf="isMobile" [class.open]="isMenuOpen">
+  <a href="#" (click)="goToSection('inicio')">Inicio</a>
+  <a href="#" (click)="goToSection('about')">Sobre mí</a>
+  <a href="#" (click)="goToSection('skills')">Habilidades</a>
+  <a href="#" (click)="goToSection('projects')">Proyectos</a>
+  <a href="#" (click)="goToSection('contact')">Contacto</a>
+</nav>
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  style="height: 0; width: 0; position: absolute; visibility: hidden"
+>
+  <!-- Definición de filtro de sombra -->
+  <defs>
+    <filter id="icon-shadow" height="130%">
+      <feDropShadow
+        dx="0"
+        dy="2"
+        stdDeviation="2"
+        flood-color="rgba(0,0,0,0.5)"
+      />
+    </filter>
+  </defs>
+</svg>
