@@ -3,7 +3,14 @@
   align-items: center;
   gap: 1rem;
 
+  list-style-type: none; // Añade esto para eliminar los puntos de lista
+
+  &__item {
+    list-style: none; // Asegúrate de que no haya estilos de lista
+  }
+
   &__opt {
+    cursor: pointer;
     font-size: var(--default-font-size);
     font-family: inherit;
     text-decoration: none;
@@ -18,5 +25,17 @@
       background-color: var(--color-primary);
       color: white;
     }
+
+    &:not(.active):hover {
+      background-color: var(--color-primary-light);
+    }
   }
+}
+
+.mobile-dropdown {
+  width: 100%; // Ajusta esto según tus necesidades
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  display: block; // Asegúrate de que sea visible
 }

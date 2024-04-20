@@ -176,6 +176,7 @@
           [class]="['skills-grid', tab.toLowerCase().replace(' ', '-')]"
           [ngStyle]="{ 'grid-template-columns': gridColumnTemplate }"
         >
+
           <shared-logo-icon
             *ngFor="let skill of getSkillsByTab(i)"
             customClass="icon-skill"

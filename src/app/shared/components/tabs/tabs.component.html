@@ -1,11 +1,30 @@
-<ul class="nav nav-tabs">
-  <div
-    class="nav__item"
-    *ngFor="let tab of tabs; let i = index;"
-    (click)="setTab(i)"
+<!-- Componente de Tabs -->
+<div class="tabs-container">
+  <!-- Menú desplegable para pantallas pequeñas -->
+  <select
+    *ngIf="isMobile"
+    class="mobile-dropdown"
+    (change)="onDropdownChange($event)"
   >
-    <button class="nav__opt" [ngClass]="activatedTab == i ? 'active' : ''">
+    <option
+      *ngFor="let tab of tabs; let i = index;"
+      [value]="i"
+      [selected]="i === activatedTab"
+    >
       {{ tab }}
-    </button>
-  </div>
-</ul>
+    </option>
+  </select>
+
+  <!-- Tabs normales para pantallas más grandes -->
+  <ul *ngIf="!isMobile" class="nav nav-tabs">
+    <li
+      class="nav__item"
+      *ngFor="let tab of tabs; let i = index;"
+      (click)="setTab(i)"
+    >
+      <button class="nav__opt" [ngClass]="{ active: activatedTab === i }">
+        {{ tab }}
+      </button>
+    </li>
+  </ul>
+</div>

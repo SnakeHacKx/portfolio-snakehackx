@@ -1,4 +1,11 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  HostListener,
+  Input,
+  OnInit,
+  Output,
+} from '@angular/core';
 
 @Component({
   selector: 'shared-tabs',
@@ -11,12 +18,26 @@ export class TabsComponent implements OnInit {
   @Output() onTabChanged = new EventEmitter<number>();
 
   activatedTab: number = 0;
+  isMobile: boolean = false;
 
   constructor() {}
 
   ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
+    this.checkScreenSize(window.innerWidth);
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any): void {
+    this.checkScreenSize(event.target.innerWidth);
+  }
+
+  checkScreenSize(width: number) {
+    this.isMobile = width < 900;
+  }
+
+  onDropdownChange(event: Event) {
+    const element = event.target as HTMLSelectElement;
+    this.setTab(Number(element.value));
   }
 
   setTab(index: number): void {
