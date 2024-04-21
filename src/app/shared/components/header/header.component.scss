@@ -9,7 +9,7 @@ header {
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(2rem);
   border-radius: 20rem;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   z-index: 50;
   border: 0.1rem solid;
   border-color: #222222;
@@ -50,7 +50,7 @@ header {
 
   & > * {
     cursor: pointer;
-    padding: 0 2rem;
+    // padding: 0 2rem;
     text-decoration: none;
     font-size: 1.7rem;
     transition: all 0.2s;
@@ -58,7 +58,7 @@ header {
     width: 14rem;
     text-align: center;
 
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     border-radius: 20rem;
     color: #eee;
     text-decoration: none;

@@ -147,4 +147,9 @@ export class HomeComponent implements OnInit {
         return [];
     }
   }
+
+  redirectToWhatsApp(): void {
+    const whatsappUrl = 'https://wa.me/50762429147';
+    window.open(whatsappUrl, '_blank');
+  }
 }

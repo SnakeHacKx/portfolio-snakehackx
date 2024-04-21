@@ -1,7 +1,7 @@
 <main>
   <section id="hero" class="section-hero">
     <div class="section-hero__box">
-      <h1 class="section-hero__heading">
+      <h1 class="section-hero__heading hero-gradient">
         Transformando Ideas en Experiencias Digitales Únicas
       </h1>
       <h3>
@@ -64,7 +64,7 @@
     <div class="align-grid-to-center">
       <div class="section-about__info-container">
         <div class="section-about__info__education">
-          <h2>Educación</h2>
+          <h2 class="heading-gradient">Educación</h2>
           <div class="info-item">
             <strong>Ingeniería en Sistemas y Computación</strong>
             <p>Universidad Tecnológica de Panamá / Azuero / 2018 - presente</p>
@@ -87,7 +87,7 @@
         </div>
 
         <div class="section-about__info__achievements">
-          <h2>Logros</h2>
+          <h2 class="heading-gradient">Logros</h2>
           <div class="info-item">
             <strong>Olimpiadas de Física a nivel regional</strong>
             <p>2017 / Pasé de ronda</p>
@@ -95,20 +95,20 @@
 
           <div class="info-item">
             <strong>Olimpiadas de Física a nivel nacional</strong>
-            <p>2017</p>
+            <p>2017 / Participación</p>
           </div>
 
           <div class="info-item">
             <strong>Concurso Cybertech Latin America - TechPrendedores</strong>
             <p>
-              Proyecto <a [routerLink]="['/projects', 'ma-001']">FindAPro</a> /
+              Proyecto <a class="link" [routerLink]="['/projects', 'ma-001']">FindAPro</a> /
               Segundo Lugar / 2023
             </p>
           </div>
         </div>
 
         <div class="section-about__info__hobbies">
-          <h2>Aficiones</h2>
+          <h2 class="heading-gradient">Aficiones</h2>
           <div class="section-about__info__hobby-grid">
             <shared-logo-icon text="Programación" iconName="icon-programming" />
             <shared-logo-icon
@@ -127,7 +127,7 @@
         </div>
 
         <div class="section-about__info__lang">
-          <h2>Idiomas</h2>
+          <h2 class="heading-gradient">Idiomas</h2>
           <div class="language-item">
             <div class="language-item__flag">
               <shared-logo-icon iconName="icon-flag-pan" />
@@ -241,8 +241,9 @@
       textContent="contacto"
     ></shared-section-heading>
     <div class="section-contact__container">
-      <h2>Hablemos de nuestro próximo proyecto</h2>
+      <h2 class="heading-gradient">Hablemos de nuestro próximo proyecto</h2>
       <shared-button
+        (click)="redirectToWhatsApp()"
         iconName="icon-whatsapp"
         textContent="Chatéame"
         buttonType="primary"

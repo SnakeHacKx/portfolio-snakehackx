@@ -322,6 +322,34 @@
         }
       ],
       "skillsAndTools": [{ "id": "wp" }]
+    },
+    {
+      "id": "wp-003",
+      "heading": "Auto Masters",
+      "year": "2023",
+      "description": "Página web estática hecha con HTML5 y SASS.",
+      "poster": "../assets/images/projects/webs/auto-masters/poster.jpg",
+      "images": [
+        {
+          "imageSrc": "../assets/images/projects/webs/auto-masters/01.png",
+          "imageAlt": "1"
+        },
+        {
+          "imageSrc": "../assets/images/projects/webs/auto-masters/02.png",
+          "imageAlt": "2"
+        },
+        {
+          "imageSrc": "../assets/images/projects/webs/auto-masters/03.png",
+          "imageAlt": "3"
+        }
+      ],
+      "skillsAndTools": [
+        { "id": "html" },
+        { "id": "css" },
+        { "id": "sass" },
+        { "id": "node" },
+        { "id": "docker" }
+      ]
     }
   ],
   "designProjects": [
