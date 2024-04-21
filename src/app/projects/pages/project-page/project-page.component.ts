@@ -1,10 +1,15 @@
-import { Component, HostListener, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import {
+  Component,
+  ElementRef,
+  HostListener,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Project } from '../../interfaces/project.interface';
 import { ProjectsService } from '../../services/projects.service';
 import { SkillsService } from '../../services/skills-tools.service';
 import { SkillInterface } from '../../interfaces/skills-tools.interface';
-import { Item } from '../../../shared/components/gallery/interfaces/item.interface';
 
 @Component({
   selector: 'app-project-page',
@@ -12,6 +17,8 @@ import { Item } from '../../../shared/components/gallery/interfaces/item.interfa
   styleUrl: './project-page.component.scss',
 })
 export class ProjectPageComponent implements OnInit {
+  @ViewChild('topOfPage') topOfPage!: ElementRef<HTMLDivElement>;
+
   public project?: Project;
   public projectSkills: SkillInterface[] = [];
 
@@ -23,9 +30,7 @@ export class ProjectPageComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private projectsService: ProjectsService,
     private skillsService: SkillsService
-  ) {
-    // console.log('ProjectPageComponent instantiated');
-  }
+  ) {}
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((params) => {
@@ -47,6 +52,14 @@ export class ProjectPageComponent implements OnInit {
     });
   }
 
+  ngAfterViewInit(): void {
+    this.scrollToTop();
+  }
+
+  scrollToTop() {
+    this.topOfPage.nativeElement.scrollIntoView();
+  }
+
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
     this.updateGridColumns(event.target.innerWidth);
@@ -61,21 +74,17 @@ export class ProjectPageComponent implements OnInit {
     });
   }
 
-  // getGridTemplateColumns(skills: SkillInterface[]): string {
-  //   const columnCount = Math.min(5, skills.length || 1);
-  //   return `repeat(${columnCount}, 1fr)`;
-  // }
-
   updateGridColumns(width: number): void {
-
-    // const numSkills = this.projectSkills.length;
     const maxColumns = width < 600 ? 2 : width >= 600 && width < 960 ? 4 : 5;
 
     console.log('updateGridColumns');
     console.log(`projects skills: ${this.skillsCount}`);
 
     // El número de columnas será el menor entre el número máximo y la cantidad de habilidades
-    this.gridColumnTemplate = `repeat(${Math.min(maxColumns, this.skillsCount)}, 1fr)`;
+    this.gridColumnTemplate = `repeat(${Math.min(
+      maxColumns,
+      this.skillsCount
+    )}, 1fr)`;
   }
 
   openUrl(url: string) {

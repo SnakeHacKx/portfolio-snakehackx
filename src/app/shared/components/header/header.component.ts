@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { SharedService } from '../../services/shared.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'shared-header',
@@ -10,7 +11,7 @@ export class HeaderComponent {
   isMobile = false;
   isMenuOpen = false;
 
-  constructor(private sharedService: SharedService) {
+  constructor(private sharedService: SharedService, private router: Router) {
     this.checkScreenSize(window.innerWidth);
   }
 
@@ -24,7 +25,15 @@ export class HeaderComponent {
   }
 
   goToSection(sectionId: string) {
-    this.sharedService.scrollToSection(sectionId);
+    if (this.router.url !== '/') {
+      // Asumiendo que '/' es tu HomePage
+      this.router.navigate(['/'], { fragment: sectionId }).then(() => {
+        // Opcional: espera a que la navegación se complete si es necesario
+        setTimeout(() => this.sharedService.scrollToSection(sectionId), 100);
+      });
+    } else {
+      this.sharedService.scrollToSection(sectionId);
+    }
     if (this.isMobile) {
       this.isMenuOpen = false;
     }
