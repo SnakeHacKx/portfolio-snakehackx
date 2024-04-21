@@ -67,43 +67,12 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+  }
 
-    @include respond(tab-port) {
-      flex-direction: column;
-      height: auto; // Ajustar la altura para el diseño vertical
-
-      .section-about__image {
-        width: 80%; // Ajusta esto según tus necesidades
-        height: 60vh;
-        margin-bottom: 2rem; // Espacio entre la imagen y el texto
-        border-radius: 10px; // Redondeo de las esquinas de la imagen
-      }
-
-      .section-about__text {
-        // background-color: red;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 80vw;
-
-        p {
-          width: 100%;
-          text-align: justify;
-        }
-      }
-    }
-
-    @include respond(phone) {
-      flex-direction: column;
-      height: auto; // Ajustar la altura para el diseño vertical
-
-      .section-about__image {
-        width: 90%; // Ajusta esto según tus necesidades
-        height: 60vh;
-        margin-bottom: 2rem; // Espacio entre la imagen y el texto
-        border-radius: 10px; // Redondeo de las esquinas de la imagen
-      }
-    }
+  &__imgbox {
+    position: relative;
+    width: 50%;
+    height: 100%;
   }
 
   &__text {
@@ -118,11 +87,29 @@
     }
   }
 
-  &__image {
+  &__image,
+  &__image-splash {
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
-    width: 50%;
-    object-fit: cover;
+    width: 100%;
+    object-fit: scale-down;
     object-position: center;
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+
+  &__image-splash {
+    z-index: -1;
   }
 
   &__social {
@@ -132,7 +119,6 @@
 
   &__info-container {
     grid-column: center-start / center-end;
-    // background-color: rebeccapurple;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -142,10 +128,33 @@
     justify-content: center;
     align-items: start;
     width: 90%;
+  }
 
-    @include respond(tab-port) {
+  @include respond(tab-port) {
+    &__image-text-container {
+      flex-direction: column;
+      height: auto;
+    }
+
+    &__imgbox {
+      // background-color: rebeccapurple;
+      width: 100%;
+      height: 50vh;
+    }
+
+    &__text {
+      // background-color: chartreuse;
+      width: 100%;
+
       display: flex;
       flex-direction: column;
+      align-items: center;
+      width: 80vw;
+
+      p {
+        width: 100%;
+        text-align: justify;
+      }
     }
   }
 
@@ -154,7 +163,6 @@
     &__achievements,
     &__hobbies,
     &__lang {
-      // background-color: rgb(127, 65, 65);
       width: 100%;
     }
 

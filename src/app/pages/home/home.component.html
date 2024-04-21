@@ -25,11 +25,19 @@
 
   <section id="about" class="section-about">
     <div class="section-about__image-text-container">
-      <img
-        src="../../../assets/images/sk-photo.png"
+      <!-- <img
+        src="../../../assets/images/sk-photo-transparent.png"
         alt=""
         class="section-about__image"
-      />
+      /> -->
+      <div class="section-about__imgbox">
+        <img class="section-about__image-splash" src="../../../assets/images/sk-photo-bg.png" alt="sk-photo-bg">
+        <img
+          class="section-about__image"
+          src="../../../assets/images/sk-photo-transparent.png"
+          alt="sk-photo"
+        />
+      </div>
       <div class="section-about__text">
         <shared-section-heading textContent="sobre mi"></shared-section-heading>
         <p class="paragraph">
@@ -101,8 +109,13 @@
           <div class="info-item">
             <strong>Concurso Cybertech Latin America - TechPrendedores</strong>
             <p>
-              Proyecto <a class="link hero-gradient" [routerLink]="['/projects', 'ma-001']">FindAPro</a> /
-              Segundo Lugar / 2023
+              Proyecto
+              <a
+                class="link hero-gradient"
+                [routerLink]="['/projects', 'ma-001']"
+                >FindAPro</a
+              >
+              / Segundo Lugar / 2023
             </p>
           </div>
         </div>
@@ -170,7 +183,7 @@
     ></shared-tabs>
 
     <div class="section-skills__grid-container">
-      <ng-container *ngFor="let tab of skillsTabs; let i = index;">
+      <ng-container *ngFor="let tab of skillsTabs; let i = index">
         <div
           *ngIf="skillTabIndex === i"
           [class]="['skills-grid', tab.toLowerCase().replace(' ', '-')]"
