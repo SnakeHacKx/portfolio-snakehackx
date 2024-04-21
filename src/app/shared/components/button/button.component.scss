@@ -5,7 +5,7 @@
   text-decoration: none;
   padding: 1.2rem 2rem;
   border-radius: 10rem;
-
+  border: 2px solid transparent; // Establece un borde transparente por defecto
   transition: all 0.2s;
   position: relative;
 
@@ -14,9 +14,9 @@
   justify-content: center;
 
   .icon-box__icon {
-    margin-right: 10px; // Espacio entre el ícono y el texto
-    width: 24px; // Tamaño del ícono
-    height: 24px; // Tamaño del ícono
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
 
     svg {
       width: 100%;
@@ -37,32 +37,80 @@
     transition: all 0.4s;
   }
 
+  // &--primary {
+  //   color: var(--color-white);
+  //   background: linear-gradient(to right, #c621e5 0%, #7d7cf9 100%);
+  //   border-color: transparent; // Asegura que el borde sea transparente
+  //   overflow: hidden;
+
+  //   &:hover {
+  //     transform: translateY(-0.3rem);
+  //     box-shadow: 0 1rem 2rem rgba(var(--color-black), 0.2);
+  //     border-color: transparent !important;
+
+  //     &::before {
+  //       width: 100%;
+  //       height: 100%;
+  //       background: linear-gradient(to right, #7f00ff 0%, #e100ff 100%);
+  //       transition: opacity 0.5s ease;
+  //       // Asegurar que no extienda más allá del botón
+  //       left: 0; // Esto asegura que esté correctamente alineado
+  //       right: 0; // Esto asegura que esté correctamente alineado
+  //       z-index: -1;
+  //       opacity: 0;
+  //       transition-property: opacity, background-color;
+  //     }
+  //   }
+
+  //   &:active {
+  //     transform: translateY(-0.1rem);
+  //     box-shadow: 0 1rem 2rem rgba(var(--color-black), 0.2);
+  //   }
+
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     background: linear-gradient(to right, #7f00ff 0%, #e100ff 100%);
+  //     z-index: -1; // Colocar detrás del contenido del botón
+  //     opacity: 0; // Inicialmente transparente
+  //     transition: opacity 0.5s ease; // Suavizar la transición de la opacidad
+  //   }
+  // }
+
   &--primary {
-    color: var(--color-black);
-    background-color: var(--color-white);
-    border-color: var(--color-white);
+    color: var(--color-white);
+    background: linear-gradient(to right, #c621e5 0%, #7d7cf9 100%);
+    border-color: transparent; // Asegura que el borde sea transparente
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, #7f00ff 0%, #e100ff 100%);
+      z-index: -1;
+      opacity: 0; // Inicialmente transparente
+      transition: opacity 0.5s ease; // Transición suave de la opacidad
+    }
 
     &:hover {
       transform: translateY(-0.3rem);
       box-shadow: 0 1rem 2rem rgba(var(--color-black), 0.2);
+      border-color: transparent !important;
 
-      background: linear-gradient(
-        to right,
-
-        #fcf4df 0%,
-        #efb7ea 50%,
-        #d66fee 100%
-      );
-      color: var(--color-black);
-
-      &::after {
-        transform: scaleX(1.2) scaleY(1.5);
-        opacity: 0;
+      &::before {
+        opacity: 1; // Cambia la opacidad para mostrar el gradiente
       }
     }
 
     &:active {
-      /* Cuando se hace el click */
       transform: translateY(-0.1rem);
       box-shadow: 0 1rem 2rem rgba(var(--color-black), 0.2);
     }
@@ -70,55 +118,37 @@
 
   &--secondary {
     color: var(--color-white);
-    border-color: var(--color-white);
     background-color: transparent;
+    border-color: var(--color-white); // Asegura un borde blanco visible
+    overflow: hidden;
 
     &:hover {
       transform: translateY(-0.3rem);
       box-shadow: 0 1rem 2rem rgba(var(--color-black), 0.2);
-      background-color: var(--color-white);
-      color: var(--color-black);
-
-      &::after {
-        transform: scaleX(1.2) scaleY(1.5);
-        opacity: 0;
+      border-color: transparent;
+      color: var(--color-white);
+      &::before {
+        opacity: 1; // Aseguramos que el fondo cambie
       }
     }
 
     &:active {
-      /* Cuando se hace el click */
-      transform: translateY(-0.1rem);
-      box-shadow: 0 1rem 2rem rgba(var(--color-black), 0.2);
-    }
-  }
-
-  &--tertiary {
-    color: var(--color-white);
-    // border-color: var(--color-white);
-    border: none;
-    background-color: transparent;
-
-    &:hover {
-      transform: translateY(-0.3rem);
-      box-shadow: 0 1rem 2rem rgba(var(--color-black), 0.2);
-      background-color: var(--color-white);
-      color: var(--color-black);
-
-      &::after {
-        transform: scaleX(1.2) scaleY(1.5);
-        opacity: 0;
-      }
-    }
-
-    &:active {
-      /* Cuando se hace el click */
       transform: translateY(-0.1rem);
       box-shadow: 0 1rem 2rem rgba(var(--color-black), 0.2);
     }
 
-    .icon-box__icon {
-      width: 16px;
-      height: 16px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, #7f00ff 0%, #e100ff 100%);
+
+      z-index: -1; // Colocar detrás del contenido del botón
+      opacity: 0; // Inicialmente transparente
+      transition: opacity 0.3s ease; // Suavizar la transición de la opacidad
     }
   }
 }

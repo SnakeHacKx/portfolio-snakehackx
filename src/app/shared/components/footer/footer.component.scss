@@ -14,11 +14,6 @@
     align-items: center;
     a {
       text-decoration: none;
-      color: var(--color-primary-light);
-
-      &:visited {
-        color: var(--color-primary-light);
-      }
     }
   }
 }

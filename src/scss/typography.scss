@@ -48,11 +48,8 @@ h3 {
 
     // #ea98da 0%,
     // #5b6cf9 100%
-
-    #7F00FF 0%,
-    #E100FF 100%
-
-    // #ea98da 0%,
+    #7f00ff 0%,
+    #e100ff 100% // #ea98da 0%,
     //  #c471ed 50%,
     // #5b6cf9 100%
   );
@@ -71,7 +68,15 @@ h3 {
   }
 
   &:hover {
-    color: var(--color-primary);
+    background: linear-gradient(
+      to right,
+
+      #7f00ff 0%,
+      #e100ff 100% // #ea98da 0%,
+    );
+
+    background-clip: text;
+    color: transparent;
   }
 }
 
@@ -80,11 +85,7 @@ h3 {
     to right,
     #12c2e9 0%,
     #c471ed 50%,
-    #f64f59 100% // #feac5e 0%,
-    // #c779d0 50%,
-    // #4bc0c8 100%
-    // #00F260 0%,
-    // #0575E6 100%,
+    #f64f59 100%
   );
 
   background-clip: text;
