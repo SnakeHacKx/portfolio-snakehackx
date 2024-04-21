@@ -1,11 +1,11 @@
 <!-- HeaderComponent HTML -->
 <header class="header" *ngIf="!isMobile">
   <nav class="navbar">
-    <a href="#" (click)="goToSection('inicio')">Inicio</a>
-    <a href="#" (click)="goToSection('about')">Sobre mí</a>
-    <a href="#" (click)="goToSection('skills')">Habilidades</a>
-    <a href="#" (click)="goToSection('projects')">Proyectos</a>
-    <a href="#" (click)="goToSection('contact')">Contacto</a>
+    <a (click)="goToSection('hero')">Inicio</a>
+    <a (click)="goToSection('about')">Sobre mí</a>
+    <a (click)="goToSection('skills')">Habilidades</a>
+    <a (click)="goToSection('projects')">Proyectos</a>
+    <a (click)="goToSection('contact')">Contacto</a>
   </nav>
 </header>
 <button class="menu-btn" *ngIf="isMobile" (click)="toggleMenu()">
@@ -25,11 +25,11 @@
   </svg>
 </button>
 <nav class="mobile-navbar" *ngIf="isMobile" [class.open]="isMenuOpen">
-  <a href="#" (click)="goToSection('inicio')">Inicio</a>
-  <a href="#" (click)="goToSection('about')">Sobre mí</a>
-  <a href="#" (click)="goToSection('skills')">Habilidades</a>
-  <a href="#" (click)="goToSection('projects')">Proyectos</a>
-  <a href="#" (click)="goToSection('contact')">Contacto</a>
+  <a (click)="goToSection('hero')">Inicio</a>
+  <a (click)="goToSection('about')">Sobre mí</a>
+  <a (click)="goToSection('skills')">Habilidades</a>
+  <a (click)="goToSection('projects')">Proyectos</a>
+  <a (click)="goToSection('contact')">Contacto</a>
 </nav>
 
 <svg
