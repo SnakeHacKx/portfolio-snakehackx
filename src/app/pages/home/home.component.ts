@@ -108,7 +108,7 @@ export class HomeComponent implements OnInit {
   updateGridColumns(width: number): void {
     const skills = this.getSkillsByTab(this.skillTabIndex);
     const numSkills = skills.length;
-    const maxColumns = width < 600 ? 2 : width >= 600 && width < 960 ? 3 : 4;
+    const maxColumns = width < 600 ? 2 : width >= 600 && width < 900 ? 4 : 5;
 
     // El número de columnas será el menor entre el número máximo y la cantidad de habilidades
     this.gridColumnTemplate = `repeat(${Math.min(maxColumns, numSkills)}, 1fr)`;

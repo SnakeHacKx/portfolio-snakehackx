@@ -1,75 +1,47 @@
-// @import "scss/app-style.scss";
-// @import "components/header/header.component.scss";
-@import "shared/components/header/header.component.scss";
-@import "pages/home/home.component.scss";
-@import "../app/projects/pages/project-page/project-page.component.scss";
 @import "../scss/typography";
 @import "../scss/mixins";
 
 :root {
-  // Colors
   --color-background: #08091d;
-
   --color-primary: #4a06f6;
   --color-primary-light: #8255f4;
   --color-primary-dark: #1e0069;
-
   --color-grey-light-1: #f7f7f7;
   --color-dark-grey: #777;
-
   --color-white: #fff;
   --color-black: #000;
-
-  // Font
   --default-font-size: 1.6rem;
 }
 
-:host {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
 html {
-  // Define que es 1rem
-  font-size: 62.5%; // 1rem = 10px
+  font-size: 62.5%;
   scroll-behavior: smooth;
 
   @include respond(tab-land) {
-    font-size: 56.25%; // 1rem = 9px
+    font-size: 56.25%;
   }
 
   @include respond(tab-port) {
-    font-size: 50%; // 1rem = 8px
+    font-size: 50%;
   }
 
-  // @include respond(phone) {
-  //   font-size: 40%; // 1rem = 8px
-  // }
-
   @include respond(big-desktop) {
-    font-size: 75%; // 1rem = 12px
+    font-size: 75%;
   }
 }
 
-body {
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
   background-color: var(--color-background);
-  // overflow: hidden;
 }
 
 .paragraph {
   font-size: var(--default-font-size);
-
-  &:not(:last-child) {
-    margin-bottom: 3rem;
-  }
 }

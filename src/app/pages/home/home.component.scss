@@ -82,6 +82,10 @@
     width: 50%;
     text-align: justify;
 
+    @include respond(tab-port) {
+      gap: 2rem;
+    }
+
     p {
       width: 75%;
     }
@@ -118,6 +122,7 @@
   }
 
   &__info-container {
+    // background-color: red;
     grid-column: center-start / center-end;
 
     display: grid;
@@ -128,6 +133,12 @@
     justify-content: center;
     align-items: start;
     width: 90%;
+
+    @include respond(tab-port) {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   @include respond(tab-port) {
