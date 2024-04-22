@@ -152,4 +152,14 @@ export class HomeComponent implements OnInit {
     const whatsappUrl = 'https://wa.me/50762429147';
     window.open(whatsappUrl, '_blank');
   }
+
+  downloadCV() {
+    const link = document.createElement('a');
+    link.href = 'assets/CV-Omar-Medina-Ing-Sistemas.pdf';
+    link.download = 'CV-Omar-Medina-Ing-Sistemas.pdf';
+    link.dispatchEvent(
+      new MouseEvent('click', { bubbles: true, cancelable: true, view: window })
+    );
+    link.remove();
+  }
 }
