@@ -1,6 +1,6 @@
 # Portfolio Omar Medina
 
-<a href="https://docs.nestjs.com/graphql/quick-start" target="blank"><img src="src/assets/icons/skills/frontend/angular.svg" width="200" alt="Angular Logo" /></a>Ï
+<a href="https://docs.nestjs.com/graphql/quick-start" target="blank"><img src="src/assets/icons/skills/frontend/angular.svg" width="200" alt="Angular Logo" /></a>
 
 
 ## Development server
