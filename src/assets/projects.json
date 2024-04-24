@@ -107,7 +107,9 @@
         { "id": "js" },
         { "id": "socket-io" },
         { "id": "express" }
-      ]
+      ],
+      "codeUrl": "https://github.com/SnakeHacKx/flutter-chat-app",
+      "demoUrl": ""
     },
     {
       "id": "ma-003",
@@ -148,7 +150,8 @@
           "imageAlt": "1"
         }
       ],
-      "skillsAndTools": [{ "id": "dart" }, { "id": "flutter" }]
+      "skillsAndTools": [{ "id": "dart" }, { "id": "flutter" }],
+      "codeUrl": ""
     },
     {
       "id": "ma-005",
@@ -206,7 +209,8 @@
         { "id": "dart" },
         { "id": "flutter" },
         { "id": "riverpod" }
-      ]
+      ],
+      "codeUrl": "https://github.com/SnakeHacKx/widgets_app"
     },
     {
       "id": "ma-006",
@@ -263,7 +267,8 @@
         { "id": "flutter" },
         { "id": "riverpod" },
         { "id": "jwt" }
-      ]
+      ],
+      "codeUrl": "https://github.com/SnakeHacKx/cinemapedia"
     }
   ],
   "webPagesProjects": [
@@ -287,7 +292,8 @@
           "imageAlt": "3"
         }
       ],
-      "skillsAndTools": [{ "id": "html" }, { "id": "css" }, { "id": "sass" }]
+      "skillsAndTools": [{ "id": "html" }, { "id": "css" }, { "id": "sass" }],
+      "codeUrl": "https://github.com/SnakeHacKx/Natours"
     },
     {
       "id": "wp-002",
@@ -321,7 +327,8 @@
           "imageAlt": "6"
         }
       ],
-      "skillsAndTools": [{ "id": "wp" }]
+      "skillsAndTools": [{ "id": "wp" }],
+      "demoUrl": "https://fixpanama.com/"
     },
     {
       "id": "wp-003",
@@ -349,7 +356,8 @@
         { "id": "sass" },
         { "id": "node" },
         { "id": "docker" }
-      ]
+      ],
+      "codeUrl": "https://github.com/SnakeHacKx/auto-repair-workshop"
     }
   ],
   "designProjects": [
@@ -389,10 +397,35 @@
           "imageAlt": "7"
         }
       ],
-      "skillsAndTools": [{ "id": "figma" }]
+      "skillsAndTools": [{ "id": "figma" }],
+      "demoUrl": "https://www.figma.com/proto/TLGjBCmtgTarPRDTz65o3C/Frigg?page-id=33%3A940&type=design&node-id=65-1605&viewport=321%2C573%2C0.14&t=U3ULTlkyLeZLeGdf-1&scaling=scale-down&starting-point-node-id=33%3A956"
     },
     {
       "id": "dp-002",
+      "heading": "Comercial de Botellas",
+      "year": "2021",
+      "description": "Proyecto en donde se utilizan conceptos de sistemas de ilumicación en Blender.",
+      "poster": "../assets/images/projects/designs/bottles/poster.jpg",
+      "images": [
+        {
+          "imageSrc": "../assets/images/projects/designs/bottles/01.png",
+          "imageAlt": "1"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/bottles/02.png",
+          "imageAlt": "2"
+        },
+        {
+          "imageSrc": "../assets/images/projects/designs/bottles/03.png",
+          "imageAlt": "3"
+        }
+      ],
+      "skillsAndTools": [{ "id": "blender" }, { "id": "pr" }],
+      "codeUrl": "",
+      "demoUrl": "https://www.youtube.com/watch?v=JDkG_9Y7nTw"
+    },
+    {
+      "id": "dp-003",
       "heading": "FindAPro",
       "year": "2020",
       "description": "Diseño UI/UX y prototipo en Figma de una aplicación de bolsa de rabajo para dispositivos móviles.",
@@ -434,37 +467,7 @@
       "skillsAndTools": [{ "id": "figma" }]
     },
     {
-      "id": "dp-006",
-      "heading": "Sistema de Calificación UTP",
-      "year": "2022",
-      "description": "Diseño UI/UX y prototipado en Figma sobre una aplicación web a modo de sugerencia a la Universidad Tecnológica de Panamá para el cambio de interfaz e hsitorial de notas de los estudiantes.",
-      "poster": "../assets/images/projects/designs/utp/poster.jpg",
-      "images": [
-        {
-          "imageSrc": "../assets/images/projects/designs/utp/01.png",
-          "imageAlt": "1"
-        },
-        {
-          "imageSrc": "../assets/images/projects/designs/utp/02.png",
-          "imageAlt": "2"
-        },
-        {
-          "imageSrc": "../assets/images/projects/designs/utp/03.png",
-          "imageAlt": "3"
-        },
-        {
-          "imageSrc": "../assets/images/projects/designs/utp/04.png",
-          "imageAlt": "4"
-        },
-        {
-          "imageSrc": "../assets/images/projects/designs/utp/05.png",
-          "imageAlt": "5"
-        }
-      ],
-      "skillsAndTools": [{ "id": "figma" }]
-    },
-    {
-      "id": "dp-007",
+      "id": "dp-005",
       "heading": "Portafolio Web Personal",
       "year": "2024",
       "description": "Diseño UI/UX y prototipado en Figma de la página web de mi portafolio.",
@@ -491,43 +494,8 @@
           "imageAlt": "5"
         }
       ],
-      "skillsAndTools": [{ "id": "figma" }]
-    },
-    {
-      "id": "dp-008",
-      "heading": "Comercial de Botellas",
-      "year": "2021",
-      "description": "Proyecto en donde se utilizan conceptos de sistemas de ilumicación en Blender.",
-      "poster": "../assets/images/projects/designs/bottles/poster.jpg",
-      "images": [
-        {
-          "imageSrc": "../assets/images/projects/designs/bottles/01.png",
-          "imageAlt": "1"
-        },
-        {
-          "imageSrc": "../assets/images/projects/designs/bottles/02.png",
-          "imageAlt": "2"
-        },
-        {
-          "imageSrc": "../assets/images/projects/designs/bottles/03.png",
-          "imageAlt": "3"
-        }
-      ],
-      "skillsAndTools": [{ "id": "blender" }, { "id": "pr" }],
-      "codeUrl": "",
-      "demoUrl": "https://www.youtube.com/watch?v=JDkG_9Y7nTw"
-    },
-    {
-      "id": "dp-009",
-      "heading": "Proyecto de HCI",
-      "year": "2021",
-      "description": "Proyecto en donde se utilizan conceptos de sistemas de ilumicación en Blender.",
-      "poster": "../../../assets/images/projects/design/personalweb.jpg",
-      "images": [
-        "../../../assets/images/projects/gallery/design/personalweb/01.png",
-        "../../../assets/images/projects/gallery/design/personalweb/02.png"
-      ],
-      "skillsAndTools": ["Figma", "Adobe Photoshop", "Web Design"]
+      "skillsAndTools": [{ "id": "figma" }],
+      "demoUrl": "https://www.figma.com/proto/THbtTBzkKTn3atA1q0zOxw/SnakeHacKx's-Portfolio-v2?page-id=0%3A1&type=design&node-id=1-2&viewport=809%2C224%2C0.08&t=UknQStJI3aL0rZOg-1&scaling=scale-down&starting-point-node-id=1%3A2&mode=design"
     }
   ],
   "backendProjects": [
@@ -571,7 +539,8 @@
           "imageAlt": "8"
         }
       ],
-      "skillsAndTools": [{ "id": "node" }, { "id": "js" }]
+      "skillsAndTools": [{ "id": "node" }, { "id": "js" }],
+      "codeUrl": "https://github.com/SnakeHacKx/TO-DO-App"
     },
     {
       "id": "bp-002",
@@ -609,7 +578,8 @@
           "imageAlt": "7"
         }
       ],
-      "skillsAndTools": [{ "id": "node" }, { "id": "js" }]
+      "skillsAndTools": [{ "id": "node" }, { "id": "js" }],
+      "codeUrl": "https://github.com/SnakeHacKx/weather-app"
     },
     {
       "id": "bp-003",
@@ -627,7 +597,8 @@
           "imageAlt": "2"
         }
       ],
-      "skillsAndTools": [{ "id": "node" }, { "id": "js" }]
+      "skillsAndTools": [{ "id": "node" }, { "id": "js" }],
+      "codeUrl": "https://github.com/SnakeHacKx/node-webserver-railway"
     },
     {
       "id": "bp-004",
@@ -697,7 +668,8 @@
         { "id": "jwt" },
         { "id": "html" },
         { "id": "css" }
-      ]
+      ],
+      "codeUrl": "https://github.com/SnakeHacKx/cascaron-rest-server-node"
     },
     {
       "id": "bp-006",
@@ -734,7 +706,8 @@
         { "id": "node" },
         { "id": "express" },
         { "id": "js" }
-      ]
+      ],
+      "codeUrl": "https://github.com/SnakeHacKx/socket-server-colas"
     },
     {
       "id": "bp-008",
@@ -767,7 +740,8 @@
         { "id": "mongo" },
         { "id": "docker" },
         { "id": "postman" }
-      ]
+      ],
+      "codeUrl": "https://github.com/SnakeHacKx/nest-pokedex"
     },
     {
       "id": "bp-009",
@@ -813,7 +787,8 @@
         { "id": "jwt" },
         { "id": "docker" },
         { "id": "postman" }
-      ]
+      ],
+      "codeUrl": "https://github.com/SnakeHacKx/teslo-shop-postgres"
     },
     {
       "id": "bp-011",
@@ -852,7 +827,8 @@
         { "id": "jwt" },
         { "id": "docker" },
         { "id": "apollo" }
-      ]
+      ],
+      "codeUrl": "https://github.com/SnakeHacKx/anylist-nestjs-graphql"
     }
   ],
   "machineLearningProjects": [
@@ -954,7 +930,8 @@
         { "id": "unity" },
         { "id": "csharp" },
         { "id": "game-design" }
-      ]
+      ],
+      "demoUrl": "https://drive.google.com/drive/folders/18upWHciriUxN_1My1DQfw1qdmOKyS-cn?usp=sharing"
     },
     {
       "id": "gp-002",
@@ -1062,22 +1039,6 @@
         "../../../assets/images/projects/gallery/engineering/numericalmethods/02.png"
       ],
       "skillsAndTools": ["C#", ".NET", "Mathematical Modeling"]
-    },
-    {
-      "id": "ep-002",
-      "heading": "Placeholder 1",
-      "year": "2020",
-      "description": "Nulla laboris veniam consectetur qui aute ad sint non nostrud est eiusmod incididunt sit adipisicing. Este es un proyecto en espera de definición concreta, pero planificado para abordar temas de ingeniería avanzada.",
-      "poster": "../../../assets/images/projects/engineering/placeholder1.jpg",
-      "images": [
-        "../../../assets/images/projects/gallery/engineering/placeholder1/01.png",
-        "../../../assets/images/projects/gallery/engineering/placeholder1/02.png"
-      ],
-      "skillsAndTools": [
-        "Software Engineering",
-        "System Design",
-        "Prototype Testing"
-      ]
     }
   ]
 }
