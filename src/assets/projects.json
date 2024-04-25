@@ -604,7 +604,7 @@
       "id": "bp-004",
       "heading": "RESTServer",
       "year": "2023",
-      "description": "Servidor REST con un CRUD usando MongoDB en NodeJS y vanilla JavaScript.",
+      "description": "Servidor REST con un CRUD usando MongoDB con NodeJS y vanilla JavaScript. El servidor también hace uso de Socket.io para un chat en tiempo real entre los usuarios registrados.",
       "poster": "../assets/images/projects/backends/rest-server/poster.jpg",
       "images": [
         {
@@ -747,7 +747,7 @@
       "id": "bp-009",
       "heading": "Teslo Shop Server",
       "year": "2023",
-      "description": "Tienda de ropa en formato de web utilizando NestJS y TypeScript contra una base de datos hecha en Postgres utilizando TypeORM. CRUD completo. Esta misma aplicación web hace uso de Web Sockets y Gateways.",
+      "description": "Backend de una tienda de ropa utilizando NestJS y TypeScript contra una base de datos hecha en PostgreSQL utilizando TypeORM. CRUD completo. Esta mismo servidor hace uso de Web Sockets y Gateways.",
       "poster": "../assets/images/projects/backends/teslo/poster.jpg",
       "images": [
         {
@@ -992,7 +992,7 @@
       "id": "gp-003",
       "heading": "2D Platformer",
       "year": "2020",
-      "description": "Videojuego en el cual se exploran las mecánicas básicas de cual quiero videojuego plataformas 2D.",
+      "description": "Videojuego en el cual se exploran las mecánicas básicas de cualquier videojuego plataformas 2D.",
       "poster": "../assets/images/projects/games/2d-platformer/poster.webp",
       "images": [
         {

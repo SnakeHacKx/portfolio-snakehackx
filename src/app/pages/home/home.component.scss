@@ -81,6 +81,7 @@
     align-items: start;
     width: 50%;
     text-align: justify;
+    gap: 2rem;
 
     @include respond(tab-port) {
       gap: 2rem;
