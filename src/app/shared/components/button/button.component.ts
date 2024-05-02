@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Project } from '../../../projects/interfaces/project.interface';
 
 @Component({
   selector: 'shared-button',
@@ -11,15 +12,24 @@ export class ButtonComponent {
 
   @Input() iconName?: string = ''; // El nombre del ícono del sprite
   @Input() iconCustomClass: string = '';
-  private baseSvgPath: string = '../../../assets/icons/sprite.svg#';
+  @Input() openInNewTab: boolean = false;
+  @Input() projectId?: string;
 
   @Output() buttonClick = new EventEmitter<void>();
+
+  private baseSvgPath: string = '../../../assets/icons/sprite.svg#';
 
   get fullPath(): string {
     return `${this.baseSvgPath}${this.iconName}`;
   }
 
   onClick(): void {
-    this.buttonClick.emit();
+    if (this.openInNewTab && this.projectId) {
+      // Abrir en una nueva pestaña
+      window.open(`/projects/${this.projectId}`, '_blank');
+    } else {
+      // Emitir evento
+      this.buttonClick.emit();
+    }
   }
 }

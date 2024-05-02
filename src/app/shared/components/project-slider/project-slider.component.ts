@@ -10,9 +10,15 @@ export class ProjectSliderComponent {
   @Input() projects: Project[] = [];
   currentIndex = 0; // Inicializa el índice del slide actual en 0
 
+
+  openUrlInNewTab(url: string): void {
+    window.open(url, '_blank');
+  }
+
   onNext(): void {
     this.currentIndex = (this.currentIndex + 1) % this.projects.length;
   }
+
 
   onPrev(): void {
     this.currentIndex =

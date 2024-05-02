@@ -16,7 +16,8 @@
           {{ project.description }}
         </div>
         <shared-button
-          [routerLink]="['/projects', project.id]"
+          [openInNewTab]="true"
+          [projectId]="project.id"
           textContent="Ver Más"
           buttonType="primary"
         ></shared-button>
