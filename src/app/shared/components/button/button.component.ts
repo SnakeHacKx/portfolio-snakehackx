@@ -26,7 +26,7 @@ export class ButtonComponent {
   onClick(): void {
     if (this.openInNewTab && this.projectId) {
       // Abrir en una nueva pestaña
-      window.open(`https://deployment--snakehackx.netlify.app/projects/${this.projectId}`, '_blank');
+      window.open(`https://snakehackx.netlify.app/projects/${this.projectId}`, '_blank');
     } else {
       // Emitir evento
       this.buttonClick.emit();
